@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0041)https://people.eecs.berkeley.edu/~barron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- DELETE THIS SCRIPT if you use this HTML, otherwise my analytics will track your page -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7580334-2');
+  </script>
+  
+  <meta name="author" content="Ying WEI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+    color: #2ca25f; /*#1772d0;07889b*/
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #E76F51; /*#f7b733;*/ /*f09228;*/
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 16px; /*14*/
+    }
+    strong {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 16px; /*14*/
+    }
+    heading {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 22px;
+    color: #E76F51; /*#fc4a1a;e37222*/
+    }
+    heading2 {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 18px;
+    }
+    papertitle {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 16px; /*14*/
+    font-weight: 700;
+    }
+    name {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 42px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <title>Ying WEI</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!--- link rel="icon" type="image/png" href="images/seal_icon.png" -->
+
+    <style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: #FFFAF0 !important;
+}
+
+}</style>
+
+<script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+</script>
+</head>
+
+  <body><div id="StayFocusd-infobar" style="display: none; top: 2400px;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+  <table width="850" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td width="70%" valign="middle">
+        <p align="center">
+        <name>Ying WEI (魏 颖)</name><br>
+        judyweiying at gmail dot com
+        </p>
+        <p>I am currently a senior research scientist at <a href="https://ai.tencent.com/ailab/zh/index">Tencent AI Lab</a>.
+        </p>
+        <p style="text-align: justify;">
+        I am interested in developing algorithms that enable machines to acquire more general notions of intelligence via knowledge transfer.
+        This includes representing and structuring the knowledge from previous tasks, allowing machines to transfer and apply the knowledge to quickly learn the current task with minimal human supervision, and autonomously evaluating the success of knowledge transfer.
+        </p>
+        <p style="text-align: justify;">
+        Previously, I completed my Ph.D. in Computer Science and Engineering at <a href="https://www.ust.hk/home/">Hong Kong University of Science and Technology</a> and my B.S. in Automation at <a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a>. I have also spent time interning at <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
+        </p>
+        </p>
+        <p align="center">
+
+<a href="data/updated_CV_tex.pdf">CV</a> &nbsp;/&nbsp;
+<!--<a href="https://people.eecs.berkeley.edu/~cbfinn/bio.txt">Bio</a> &nbsp;/&nbsp;-->
+<a href="https://lbezone.ust.hk/pdfviewer/web/viewer.html?file=aHR0cHM6Ly9sYmV6b25lLnVzdC5oay9vYmovMS9vLzk5MTAxMjU1NDg2NzMwMzQxMi85OTEwMTI1NTQ4NjczMDM0MTIucGRm#page=1">PhD Thesis</a> &nbsp;/&nbsp;
+<!--<a href="https://scholar.google.com/citations?hl=en&amp;user=1xw2vTsAAAAJ">Google Scholar</a> &nbsp;/&nbsp;-->
+<!--<a href="http://www.github.com/cbfinn/"> GitHub </a> &nbsp;/&nbsp;-->
+<a href="https://www.linkedin.com/in/ying-wei-81435159/">LinkedIn</a> 
+        </p>
+        </td>
+        <td width="30%">
+        <img src="images/Ying_circle_2.png">
+        </td>
+      </tr>
+  </tbody></table>
+
+      <!-- NEWS SECTION -->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody></tbody><td width="100%" valign="middle">
+      <heading>News</heading></h2>
+      <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
+      <ul>
+        <!--<h3 id="2019">2019</h3>-->
+        <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" is accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
+        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
+        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" is accepted by the <a href="https://sites.google.com/view/med-neurips-2019">Medical Imaging meets NeurIPS</a> workshop at NeurIPS 2019
+        <li> Serving as a reviewer for ICLR 2019</li>
+        <li> Recognized as one of the highest-scoring reviewers for NeurIPS 2019
+        <li> Serving as a senior program committee member for AAAI 2020
+        <li> Invited to be a session chair for IJCAI 2019
+        <li> Our paper "Hierarchically-structured Meta-learning" is accepted by ICML 2019
+
+
+      </ul>
+      </div>
+      </td></tbody>
+      </table>
+
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tbody>
+<td width="100%" valign="middle">
+            <heading>Publications</heading> <br><br>
+            (*: equal contribution, <u>___</u>: intern that I have mentored) <br><br>
+
+          <!--<heading2><i>Preprints</i></heading2><br><br>-->
+
+              <div onmouseover="document.getElementById('tnp').style.display = 'block';"
+                onmouseout="document.getElementById('tnp').style.display='none';">
+              <a href="https://arxiv.org/pdf/1909.03209.pdf">
+                <papertitle>Transferable Neural Processes for Hyperparameter Optimization
+</papertitle></a><br>
+			  <i>Ying Wei</i>,
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>, 
+              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>
+              <br>
+              <em>The Meta Learning Workshop at NeurIPS</em>, 2019 <br>              
+              <a href="https://arxiv.org/abs/1909.03209">arXiv</a>  
+              </div>
+              <div id="tnp" style="display:none">
+              Conventional hyperparameter optimization (HPO) algorithms require considerable hyperparameter evaluation trials,  which impedes their success in wider applications where a single trial on a huge dataset is often costly. Thereon, we are inspired to speed up HPO by transferring knowledge from historical HPO trials on other datasets. The proposed meta-learning algorithm innovates the dataset-aware attention to identify the most similar datasets, and first  transfers trial observations,  neural processes parameters, and initial hyperparameter configurations collectively from these datasets.
+              </div><br>
+
+              <div onmouseover="document.getElementById('grl').style.display = 'block';"
+                onmouseout="document.getElementById('grl').style.display='none';">
+                <papertitle>Graph Few-shot Learning via Knowledge Transfer
+</papertitle></a><br>
+              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="https://chuxuzhang.github.io/">Chuxu Zhang</a>,
+        <i>Ying Wei</i>,
+              <a href="http://www.meng-jiang.com/">Meng Jiang</a>, 
+              <a href="https://suhangwang.ist.psu.edu/">Suhang Wang</a>, 
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://www3.nd.edu/~nchawla/">Nitesh Chawla</a>,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>               
+              <br>
+              <em>The Graph Representation Learning Workshop at NeurIPS</em>, 2019 <br>              
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="grl" style="display:none">
+              For the first time, we attack the problem of semi-supervised node classification by transferring the knowledge learned from historical graphs. We propose a novel meta-learning algorithm on graphs instead of i.i.d. data. We learn a transferable metric space for node similarity, where two embedding functions encrypting both local and global structures are learned from previous graphs.
+              </div><br>
+
+              <div onmouseover="document.getElementById('couda').style.display = 'block';"
+                onmouseout="document.getElementById('couda').style.display='none';">
+                <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis
+</papertitle></a><br>
+              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang</u></a>,
+        <i>Ying Wei</i>,
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  Shuaicheng Niu, Qingyao Wu, 
+              <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
+              <br>
+              <em>The Medical Imaging Meets NeurIPS Workshop at NeurIPS</em>, 2019 <br>              
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="couda" style="display:none">
+              We are strongly motivated to improve unsupervised domain adaptation for medical image diagnosis, from the perspectives of denoising noisy annotations due to limited expertise and differentiating the adaptation difficulty of images that have significant discrepancies. The proposed, harnessing the collective intelligence of two peer networks, achieves the goals via a noise co-adaptation layer and a transferability-aware weight for each image.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('e2e').style.display = 'block';" onmouseout="document.getElementById('e2e').style.display='none';">
+                <papertitle>Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
+              <a href="https://lixin4ever.github.io/">Xin Li</a>, 
+              <i>Ying Wei</i>,
+              <a href="https://lidongbing.github.io/">Lidong Bing</a>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>2019 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019 <br>
+              pdf / <a href="https://github.com/hsqmlzno1/Transferable-E2E-ABSA">code</a>
+            </div>
+              <div id="e2e" style="display: none;">
+             Jointly extracting aspects and sentiments for sentiment classification requires considerable labeled sentences which are highly labor-intensive. We innovatively alleviate the problem via unsupervised domain adaptation from a sufficiently labeled domain. We propose a  novel  selective  adversarial  learning  method  to learn correlation  vectors between aspects and sentiments and attentively  transfer them across domains.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('dman').style.display = 'block';" onmouseout="document.getElementById('dman').style.display='none';">
+                <papertitle>From Whole Slide Imaging to Microscopy: Deep Microscopy Adaptation Network for
+Histopathology Cancer Image Classification</papertitle></a><br>
+              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang</u></a>*,
+              <a href="http://cobweb.cs.uga.edu/~hanbo/">Hanbo Chen</a>*, 
+              <i>Ying Wei</i>*,
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>, 
+              Jiezhang Cao, Xinjuan  Fan, Xiaoying  Lou,  Hailing  Liu,  Jinlong  Hou,  Xiao  Han,  Jianhua  Yao,  Qingyao  Wu, 
+              <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>
+              <br>
+              <em>22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>, 2019 <br>
+              pdf 
+            </div>
+              <div id="dman" style="display: none;">
+             This work is the first to empower digital pathology image classification directly based on microscopy images. Specifically, we resort to unsupervised domain adaptation from whole slide images to remedy the lack of annotated microscopy images. The proposed resolves intra-domain discrepancy and class imbalance via entropy minimization and sample re-weighting, respectively, besides inter-domain discrepancy.              
+         </div><br>
+
+
+              <div onmouseover="document.getElementById('hsml').style.display = 'block';" onmouseout="document.getElementById('hsml').style.display='none';">
+              	<a href="http://proceedings.mlr.press/v97/yao19b.html">
+                <papertitle>Hierarchically Structured Meta-learning</papertitle></a><br>
+              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <i>Ying Wei</i>,
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a> 
+              <br>
+              <em>36th International Conference on Machine Learning (ICML)</em>, 2019 <br>
+              <a href="http://proceedings.mlr.press/v97/yao19b/yao19b.pdf">pdf</a> / <a href="https://github.com/huaxiuyao/hsml_2019">code</a>
+            </div>
+              <div id="hsml" style="display: none;">
+             We devote to conquering a critical challenge in meta-learning, namely task uncertainty and heterogeneity, where tasks may be originated from wildly different distributions. We propose a highly-motivated meta-learning algorithm with hierarchical task clustering. It not only alleviates task heterogeneity via  knowledge customization to different clusters of tasks, but also preserves knowledge generalization among a cluster of similar tasks.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('metast').style.display = 'block';" onmouseout="document.getElementById('metast').style.display='none';">
+              	<a href="https://arxiv.org/abs/1901.08518">
+                <papertitle>Learning from Multiple Cities: A Meta-Learning Approach for Spatial-Temporal Prediction</papertitle></a><br>
+              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              Yiding Liu, 
+              <i>Ying Wei</i>,
+              Xianfeng Tang,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a> 
+              <br>
+              <em>The Web Conference (WWW)</em>, 2019 <br>
+              <a href="https://arxiv.org/pdf/1901.08518.pdf">pdf</a> / <a href="https://github.com/huaxiuyao/MetaST">code</a>
+            </div>
+              <div id="metast" style="display: none;">
+             This work improves spatial-temporal prediction tasks like traffic prediction for those cities with only limited training data in a short period. The improvement is attributed to the knowledge  transferred from other cities with sufficient data covering long periods. We first introduce the meta-learning paradigm into spatial-temporal prediction, and formulate the transferable knowledge as both short-term and long-term spatial-temporal patterns which are represented as model parameters and an explicit memory, respectively. 
+              </div><br>
+
+              <div onmouseover="document.getElementById('c2f').style.display = 'block';" onmouseout="document.getElementById('c2f').style.display='none';">
+              	<a href="https://arxiv.org/abs/1811.10999">
+                <papertitle>Exploiting Coarse-to-Fine Task Transfer for Aspect-Level Sentiment Classification</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              Xiang Zhang, 
+              <a href="https://lixin4ever.github.io/">Xin Li</a> 
+              <br>
+              <em>33rd AAAI Conference on Artificial Intelligence (AAAI) </em>, 2019 <br>
+              <a href="https://arxiv.org/pdf/1811.10999.pdf">pdf</a> / <a href="https://github.com/hsqmlzno1/MGAN">code</a>
+            </div>
+              <div id="c2f" style="display: none;">
+             We aim at identifying sentiment towards aspect terms in a sentence, while  annotating sentences in this case is prohibitively expensive. Innovatively,  we leverage knowledge from more easily accessible sentences whose sentiment is annotated to aspect categories. We propose a multi-granularity alignment network to achieve domain adaptation, which resolves both aspect granularity inconsistency and feature discrepancy between domains.
+              </div><br>
+
+              <div onmouseover="document.getElementById('l2mt').style.display = 'block';" onmouseout="document.getElementById('l2mt').style.display='none';">
+                <a href="https://papers.nips.cc/paper/7819-learning-to-multitask">
+                <papertitle>Learning to Multitask</papertitle></a><br>
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,
+              <i>Ying Wei</i>,
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>32nd Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2018 <br>
+              <a href="https://papers.nips.cc/paper/7819-learning-to-multitask.pdf">pdf</a>
+            </div>
+              <div id="l2mt" style="display: none;">
+             This work is the pioneer in automatically identifying an effective multitask model for a multitask problem, empowered by a groundbreaking learning to multitask framework.
+              </div><br>
+
+              <div onmouseover="document.getElementById('l2t').style.display = 'block';" onmouseout="document.getElementById('l2t').style.display='none';">
+                <a href="http://proceedings.mlr.press/v80/wei18a.html">
+                <papertitle>Transfer learning via Learning to Transfer</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,            
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>35th International Conference on Machine Learning (ICML)</em>, 2018 <br>
+              <a href="http://proceedings.mlr.press/v80/wei18a/wei18a.pdf">pdf</a>
+            </div>
+              <div id="l2t" style="display: none;">
+             This work opens a new door to improve transfer learning effectiveness. We propose a groundbreaking learning to transfer framework to automatically optimize what and how to transfer across domains, by taking advantage of previous transfer learning experiences.
+              </div><br>  
+
+              <div onmouseover="document.getElementById('hatn').style.display = 'block';" onmouseout="document.getElementById('hatn').style.display='none';">
+                <a href="https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16873">
+                <papertitle>Hierarchical Attention Transfer Network for Cross-domain Sentiment Classification</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>32nd AAAI Conference on Artificial Intelligence (AAAI)</em>, 2018 <br>
+              <a href="https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16873/16149">pdf</a> / <a href="https://github.com/hsqmlzno1/HATN">code</a>
+            </div>
+              <div id="hatn" style="display: none;">
+             We are dedicated to improve cross-domain sentiment classification, from the perspectives of discovering domain-invariant emotion words of higher quality for knowledge transfer as well as capturing domain-specific emotion words for sentiment classification. The proposed hierarchical attention transfer network achieves the two goals with a  hierarchical attention mechanism and a non-pivots network, respectively.
+              </div><br>       
+
+              <div onmouseover="document.getElementById('tcb').style.display = 'block';" onmouseout="document.getElementById('tcb').style.display='none';">
+                <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16692/">
+                <papertitle>Transferable Contextual Bandit for Cross-Domain Recommendation</papertitle></a><br>
+              <a href="http://boliu68.github.io/about/">Bo Liu</a>,
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>
+              <br>
+              <em>32nd AAAI Conference on Artificial Intelligence (AAAI)</em>, 2018 <br>
+              <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16692/16564">pdf</a>
+            </div>
+              <div id="tcb" style="display: none;">
+             Though contextual bandit effectively solves the exploitation-exploration dilemma in recommendation systems, it suffers from over-exploration in the cold-start scenario. This work is the first to alleviate the problem by transferring knowledge from other domains. We propose a transferable contextual bandit policy which transfers observations to improve user interests estimation for exploitation and thus accelerates the exploration.transfer network achieves the two goals with a  hierarchical attention mechanism and a non-pivots network, respectively.
+              </div><br>   
+
+              <div onmouseover="document.getElementById('tcb').style.display = 'block';" onmouseout="document.getElementById('tcb').style.display='none';">
+                <a href="https://arxiv.org/abs/1708.05629">
+                <papertitle>Learning to Transfer</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>
+              <br>
+              <a href="https://arxiv.org/pdf/1708.05629.pdf">arXiv</a>
+            </div>
+              <div id="tcb" style="display: none;">
+             Highly motivated by human beings' capabilities to reflect on transfer learning experiences, we propose a novel transfer learning framework to learn meta-knowledge from historical transfer learning experiences and apply the meta-knowledge to automatically optimize what to transfer in the future.
+              </div><br> 
+
+              <div onmouseover="document.getElementById('amn').style.display = 'block';" onmouseout="document.getElementById('amn').style.display='none';">
+                <a href="https://www.ijcai.org/proceedings/2017/0311">
+                <papertitle>End-to-End Adversarial Memory Network for Cross-domain Sentiment Classification</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <i>Ying Wei</i>,
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>26th International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2017 <br>
+              <a href="https://www.ijcai.org/proceedings/2017/0311.pdf">pdf</a> / <a href="https://github.com/hsqmlzno1/HATN">code</a>
+            </div>
+              <div id="amn" style="display: none;">
+             This work focuses on cross-domain sentiment classification, e.g., sentiment classification of book reviews by transferring knowledge from electronics product reviews. The key here is to identify domain-invariant emotion words as the transferable knowledge. We are the first to automatically learn domain-invariant emotion words by introducing  an end-to-end adversarial memory network and offer a direct visualization of them.
+              </div><br> 
+
+              <div onmouseover="document.getElementById('dnn').style.display = 'block';" onmouseout="document.getElementById('dnn').style.display='none';">
+                <a href="https://www.ijcai.org/proceedings/2017/0318">
+                <papertitle>Deep Neural Networks for High Dimension, Low Sample Size Data</papertitle></a><br>
+              <a href="http://boliu68.github.io/about/">Bo Liu</a>,
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>
+              <br>
+              <em>26th International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2017 <br>
+              <a href="https://www.ijcai.org/proceedings/2017/0318.pdf">pdf</a>
+            </div>
+              <div id="dnn" style="display: none;">
+             We devote to address the problems of overfitting and high-variance gradients, when training deep neural networks on high dimension but low sample size data such as genetic data for phenotype prediction in bioinformatics. We propose a deep neural pursuit network which alleviates overfitting by selecting a subset of features and reduces variance by averaging the gradients over multiple dropouts.
+              </div><br>   
+
+              <div onmouseover="document.getElementById('hth_journal').style.display = 'block';" onmouseout="document.getElementById('hth_journal').style.display='none';">
+              <a href="https://dl.acm.org/citation.cfm?id=2744204">
+              <papertitle>Heterogeneous Translated Hashing: A Scalable Solution towards Multi-modal Similarity Search</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="https://www.cse.ust.hk/~yqsong/">Yangqiu Song</a>,
+              <i>Yi Zhen</i>,
+              <a href="http://boliu68.github.io/about/">Bo Liu</a>,              
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>ACM Transactions on Knowledge Discovery from Data (TKDD)</em>, 10(4):36, 2016 <br>
+              <a href="pubs/HTH_journal.pdf">pdf</a>
+            </div>
+              <div id="hth_journal" style="display: none;">
+             This work provides a theoretical analysis and guarantee for the scalable heterogeneous translated hashing method which is proposed to build the correspondence between heterogeneous domains.
+              </div><br> 
+
+              <div onmouseover="document.getElementById('floral').style.display = 'block';" onmouseout="document.getElementById('floral').style.display='none';">
+                <a href="https://dl.acm.org/citation.cfm?id=2939830">
+                <papertitle>Transfer Knowledge between Cities</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="http://urban-computing.com/yuzheng">Yu Zheng</a>,
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>22nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2016 <br>
+              <a href="pubs/FLORAL.pdf">pdf</a>
+            </div>
+              <div id="floral" style="display: none;">
+             We propose the first principled approach to transfer knowledge between domains, each of which comprises multiple modalities of datasets. We conduct a case study of air quality prediction --  borrowing knowledge from the cities with sufficient annotations and data to the cities with either scarce annotations or insufficient data in any modality. The proposed method formulates the transferable knowledge as semantically related dictionaries for multiple modalities learned from a source domain and labeled examples.
+              </div><br>  
+
+              <div onmouseover="document.getElementById('htl').style.display = 'block';" onmouseout="document.getElementById('htl').style.display='none';">
+                <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12308">
+                <papertitle>Instilling Social to Physical: Co-Regularized Heterogeneous Transfer Learning</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="http://www.cse.ust.hk/~yinz/">Yin Zhu</a>,   
+              <i>Cane Wing-ki Leung</i>           
+              <a href="https://www.cse.ust.hk/~yqsong/">Yangqiu Song</a>,
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>30th AAAI Conference on Artificial Intelligence (AAAI)</em>, 2016 <br>
+              <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12308/11742">pdf</a>
+            </div>
+              <div id="htl" style="display: none;">
+             This work first transfers knowledge from posts in the social media side to sensors in the physical world to improve ubiquitous computing tasks such as activity recognition. We propose a co-regularized heterogeneous transfer learning model to discover the transferable feature representations that bridge two domains in heterogeneous representation structures, co-regularized by both correspondence and labels.
+              </div><br>  
+
+              <div onmouseover="document.getElementById('hth').style.display = 'block';" onmouseout="document.getElementById('hth').style.display='none';">
+              <a href="https://dl.acm.org/citation.cfm?id=2623330.2623688">
+              <papertitle>Scalable Heterogeneous Translated Hashing</papertitle></a><br>
+              <i>Ying Wei</i>,
+              <a href="https://www.cse.ust.hk/~yqsong/">Yangqiu Song</a>,
+              <i>Yi Zhen</i>,
+              <a href="http://boliu68.github.io/about/">Bo Liu</a>,              
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
+              <br>
+              <em>20th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2014 <br>
+              <strong style="color:#E76F51">Best Paper Finalist</strong><br>
+              <a href="pubs/HTH.pdf">pdf</a>
+            </div>
+              <div id="hth" style="display: none;">
+             Knowledge transfer between domains that lie in heterogeneous feature spaces but have no access to explicit correspondence is almost impossible. This work is the pioneer in using hashing to  build the correspondence between such domains. The proposed method simultaneously learns hash functions embedding heterogeneous domains into different Hamming spaces, and a translator aligning these spaces.
+              </div><br> 
+              
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?t=tt&d=n32bcR6U-3rPNlZ28Wf5amUSwZXQ59XRRfTdnixWrUQ"></script>
+    
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                  The source code of this website is adapted from <a href="https://jonbarron.info/">this page</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+</td>
+
+</tbody></table>
+
+</html>
