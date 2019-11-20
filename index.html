@@ -187,6 +187,8 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> Serving as a program committe member for ICML 2020</li>
+        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by AAAI 2020</li>
         <li> Serving as a program committe member for WWW 2020</li>
         <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" is accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
         <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
@@ -212,6 +214,28 @@ html {
             (*: equal contribution, <u>___</u>: intern that I have mentored) <br><br>
 
           <!--<heading2><i>Preprints</i></heading2><br><br>-->
+              <div onmouseover="document.getElementById('grl').style.display = 'block';"
+                onmouseout="document.getElementById('grl').style.display='none';">
+                <papertitle>Graph Few-shot Learning via Knowledge Transfer
+</papertitle></a><br>
+              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="https://chuxuzhang.github.io/">Chuxu Zhang</a>,
+        <i>Ying Wei</i>,
+              <a href="http://www.meng-jiang.com/">Meng Jiang</a>, 
+              <a href="https://suhangwang.ist.psu.edu/">Suhang Wang</a>, 
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://www3.nd.edu/~nchawla/">Nitesh Chawla</a>,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>               
+              <br>
+              <em>Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)</em>, 2020 <br>     
+              pdf / code     
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="grl" style="display:none">
+              For the first time, we attack the problem of semi-supervised node classification by transferring the knowledge learned from historical graphs. We propose a novel meta-learning algorithm on graphs instead of i.i.d. data. We learn a transferable metric space for node similarity, where two embedding functions encrypting both local and global structures are learned from previous graphs.
+              </div><br>
+
+
 
               <div onmouseover="document.getElementById('tnp').style.display = 'block';"
                 onmouseout="document.getElementById('tnp').style.display='none';">
@@ -228,26 +252,6 @@ html {
               </div>
               <div id="tnp" style="display:none">
               Conventional hyperparameter optimization (HPO) algorithms require considerable hyperparameter evaluation trials,  which impedes their success in wider applications where a single trial on a huge dataset is often costly. Thereon, we are inspired to speed up HPO by transferring knowledge from historical HPO trials on other datasets. The proposed meta-learning algorithm innovates the dataset-aware attention to identify the most similar datasets, and first  transfers trial observations,  neural processes parameters, and initial hyperparameter configurations collectively from these datasets.
-              </div><br>
-
-              <div onmouseover="document.getElementById('grl').style.display = 'block';"
-                onmouseout="document.getElementById('grl').style.display='none';">
-                <papertitle>Graph Few-shot Learning via Knowledge Transfer
-</papertitle></a><br>
-              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
-              <a href="https://chuxuzhang.github.io/">Chuxu Zhang</a>,
-        <i>Ying Wei</i>,
-              <a href="http://www.meng-jiang.com/">Meng Jiang</a>, 
-              <a href="https://suhangwang.ist.psu.edu/">Suhang Wang</a>, 
-              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
-              <a href="https://www3.nd.edu/~nchawla/">Nitesh Chawla</a>,
-              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>               
-              <br>
-              <em>The Graph Representation Learning Workshop at NeurIPS</em>, 2019 <br>              
-              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
-              </div>
-              <div id="grl" style="display:none">
-              For the first time, we attack the problem of semi-supervised node classification by transferring the knowledge learned from historical graphs. We propose a novel meta-learning algorithm on graphs instead of i.i.d. data. We learn a transferable metric space for node similarity, where two embedding functions encrypting both local and global structures are learned from previous graphs.
               </div><br>
 
               <div onmouseover="document.getElementById('couda').style.display = 'block';"
