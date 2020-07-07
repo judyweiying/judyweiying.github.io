@@ -171,7 +171,10 @@ html {
 <a href="https://lbezone.ust.hk/pdfviewer/web/viewer.html?file=aHR0cHM6Ly9sYmV6b25lLnVzdC5oay9vYmovMS9vLzk5MTAxMjU1NDg2NzMwMzQxMi85OTEwMTI1NTQ4NjczMDM0MTIucGRm#page=1">PhD Thesis</a> &nbsp;/&nbsp;
 <!--<a href="https://scholar.google.com/citations?hl=en&amp;user=1xw2vTsAAAAJ">Google Scholar</a> &nbsp;/&nbsp;-->
 <!--<a href="http://www.github.com/cbfinn/"> GitHub </a> &nbsp;/&nbsp;-->
-<a href="https://www.linkedin.com/in/ying-wei-81435159/">LinkedIn</a> 
+<a href="https://www.linkedin.com/in/ying-wei-81435159/">LinkedIn</a> &nbsp;/&nbsp;
+<!--<a href="https://scholar.google.com/citations?hl=en&amp;user=1xw2vTsAAAAJ">Google Scholar</a> &nbsp;/&nbsp;-->
+<!--<a href="http://www.github.com/cbfinn/"> GitHub </a> &nbsp;/&nbsp;-->
+<a href="https://scholar.google.com/citations?hl=en&user=5UpFdKsAAAAJ">Google Scholar</a> 
         </p>
         </td>
         <td width="30%">
@@ -187,12 +190,16 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" is accepted by IEEE Transactions on Image Processing</li>
+        <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" is accepted by KDD 2020</li>
+        <li> Serving as a program committe member for ECML/PKDD 2020</li>
+        <li> Serving as a program committe member for NeurIPS 2020</li>
         <li> Serving as a program committe member for ICML 2020</li>
         <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by AAAI 2020</li>
+        <li> Serving as a program committe member for IJCAI 2020</li>
         <li> Serving as a program committe member for WWW 2020</li>
         <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" is accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
         <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
-        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" is accepted by the <a href="https://sites.google.com/view/med-neurips-2019">Medical Imaging meets NeurIPS</a> workshop at NeurIPS 2019
         <li> Serving as a reviewer for ICLR 2020</li>
         <li> Recognized as one of the highest-scoring reviewers for NeurIPS 2019
         <li> Serving as a senior program committee member for AAAI 2020
@@ -214,6 +221,42 @@ html {
             (*: equal contribution, <u>___</u>: intern that I have mentored) <br><br>
 
           <!--<heading2><i>Preprints</i></heading2><br><br>-->
+
+ 			<div onmouseover="document.getElementById('couda').style.display = 'block';"
+                onmouseout="document.getElementById('couda').style.display='none';">
+                <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis
+</papertitle></a><br>
+              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang*</u></a>,
+        <i>Ying Wei*</i>, Qingyao Wu*, 
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  Shuaicheng Niu, 
+              <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
+              <br>
+              <em>IEEE Transactions on Image Processing</em>, 2020 <br>              
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="couda" style="display:none">
+              We are strongly motivated to improve unsupervised domain adaptation for medical image diagnosis, from the perspectives of denoising noisy annotations due to limited expertise and differentiating the adaptation difficulty of images that have significant discrepancies. The proposed, harnessing the collective intelligence of two peer networks, achieves the goals via a noise co-adaptation layer and a transferability-aware weight for each image.
+              </div><br>
+
+			  <div onmouseover="document.getElementById('translider').style.display = 'block';"
+                onmouseout="document.getElementById('translider').style.display='none';">
+                <papertitle>TranSlider: Transfer Ensemble Learning from Exploitation to Exploration
+</papertitle></a><br>
+              <u>Kuo Zhong*</u>,
+        <i>Ying Wei*</i>, 
+              <a href="https://www-en.sz.tsinghua.edu.cn/INFORMATIONSCIENCE/108547.jhtml">Chun Yuan</a>,  
+              Haoli Bai,
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
+              <br>
+              <em>Twenty-sixth ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2020 <br> 
+              pdf / code                  
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="translider" style="display:none">
+              Learning a strategy dictating what and where to transfer is key to avoid negative transfer, while the strategy always suffers from overfitting in light of limited annotations in a target domain. For the first time, we propose transfer ensemble learning to solve the problem. We propose to generate a spectrum of models in decreasing transferability, ranging from pure exploitation of the source model to unconstrained exploration for the target domain.
+              </div><br>
+
               <div onmouseover="document.getElementById('grl').style.display = 'block';"
                 onmouseout="document.getElementById('grl').style.display='none';">
                 <papertitle>Graph Few-shot Learning via Knowledge Transfer
@@ -254,24 +297,7 @@ html {
               Conventional hyperparameter optimization (HPO) algorithms require considerable hyperparameter evaluation trials,  which impedes their success in wider applications where a single trial on a huge dataset is often costly. Thereon, we are inspired to speed up HPO by transferring knowledge from historical HPO trials on other datasets. The proposed meta-learning algorithm innovates the dataset-aware attention to identify the most similar datasets, and first  transfers trial observations,  neural processes parameters, and initial hyperparameter configurations collectively from these datasets.
               </div><br>
 
-              <div onmouseover="document.getElementById('couda').style.display = 'block';"
-                onmouseout="document.getElementById('couda').style.display='none';">
-                <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis
-</papertitle></a><br>
-              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang</u></a>,
-        <i>Ying Wei</i>,
-              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  Shuaicheng Niu, Qingyao Wu, 
-              <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
-              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
-              <br>
-              <em>The Medical Imaging Meets NeurIPS Workshop at NeurIPS</em>, 2019 <br>              
-              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
-              </div>
-              <div id="couda" style="display:none">
-              We are strongly motivated to improve unsupervised domain adaptation for medical image diagnosis, from the perspectives of denoising noisy annotations due to limited expertise and differentiating the adaptation difficulty of images that have significant discrepancies. The proposed, harnessing the collective intelligence of two peer networks, achieves the goals via a noise co-adaptation layer and a transferability-aware weight for each image.
-              </div><br>
-
-
+             
               <div onmouseover="document.getElementById('e2e').style.display = 'block';" onmouseout="document.getElementById('e2e').style.display='none';">
                 <papertitle>Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning</papertitle></a><br>
               <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
