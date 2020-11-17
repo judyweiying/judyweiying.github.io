@@ -190,14 +190,20 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> Serving as a senior program committee member for AAAI 2021</li>
+        <li> Serving as a program committee member for ICLR 2021</li>
+        <li> Serving as a program committee member for WWW 2021</li>
+         <li> Our paper "Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages" is accepted by EMNLP 2020</li>
+        <li> Our paper "Self-Supervised Graph Transformer on Large-Scale Molecular Data" is accepted by NeurIPS 2020</li>
+        <li> Our paper "Adversarial Sparse Transformer for Time Series Forecasting" is accepted by NeurIPS 2020</li>
         <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" is accepted by IEEE Transactions on Image Processing</li>
         <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" is accepted by KDD 2020</li>
-        <li> Serving as a program committe member for ECML/PKDD 2020</li>
-        <li> Serving as a program committe member for NeurIPS 2020</li>
-        <li> Serving as a program committe member for ICML 2020</li>
+        <li> Serving as a program committee member for ECML/PKDD 2020</li>
+        <li> Serving as a program committee member for NeurIPS 2020</li>
+        <li> Serving as a program committee member for ICML 2020</li>
         <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by AAAI 2020</li>
-        <li> Serving as a program committe member for IJCAI 2020</li>
-        <li> Serving as a program committe member for WWW 2020</li>
+        <li> Serving as a program committee member for IJCAI 2020</li>
+        <li> Serving as a program committee member for WWW 2020</li>
         <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" is accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
         <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
         <li> Serving as a reviewer for ICLR 2020</li>
@@ -221,18 +227,63 @@ html {
             (*: equal contribution, <u>___</u>: intern that I have mentored) <br><br>
 
           <!--<heading2><i>Preprints</i></heading2><br><br>-->
+        <div onmouseover="document.getElementById('mgl').style.display = 'block';"
+                onmouseout="document.getElementById('mgl').style.display='none';">
+                <papertitle>Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/"><u>Zheng Li</u></a>, Mukul Kumar, William Headden, Bing Yin, <i>Ying Wei</i>, 
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>,  
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>              
+              <br>
+              <em>2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2020 <br>
+              <a href="https://www.aclweb.org/anthology/2020.emnlp-main.179.pdf">pdf</a>
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="mgl" style="display:none">
+              This work focuses on the problem of cross-lingual transfer (CLT). For each CLT task, we formulate the transfer process as information propagation over a dynamic graph. More importantly, we improve the transfer effectiveness by extracting meta-knowledge such as propagation strategies from previous CLT experiences. 
+              </div><br>
+
+
+        <div onmouseover="document.getElementById('grover').style.display = 'block';"
+                onmouseout="document.getElementById('grover').style.display='none';">
+                <papertitle>Self-Supervised Graph Transformer on Large-Scale Molecular Data</papertitle></a><br>
+               Yu Rong*, 
+              <a href="http://yataobian.com/">Yatao Bian*</a>,  Tingyang Xu, Weiyang Xie, <i>Ying Wei</i>,
+              <a href="https://sites.google.com/site/wenbinghuangshomepage/home">Wenbing Huang</a>,  
+              <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
+              <br>
+              <em>34th Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2020 <br> 
+              <a href="https://papers.nips.cc/paper/2020/file/94aef38441efa3380a3bed3faf1f9d5d-Paper.pdf">pdf</a>             
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="grover" style="display:none">
+              We propose a novel framework, GROVER, for effective molecular representation which is a crucial prerequisite in AI-driven drug design and discovery. GROVER learns to characterize molecules with rich and semantic features from enormous unlabeled molecular data, with carefully designed self-supervised tasks in node-, edge-, and graph-level. Besides, GROVER itself is more expressive, integrating Message Passing Networks into the Transformer-style architecture.
+              </div><br>
+
+      <div onmouseover="document.getElementById('ast').style.display = 'block';"
+                onmouseout="document.getElementById('ast').style.display='none';">
+                <papertitle>Adversarial Sparse Transformer for Time Series Forecasting</papertitle></a><br>
+                Sifan Wu*,  Xi Xiao, Qianggang Ding*, <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,
+                <i>Ying Wei</i>, <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
+              <br>
+              <em>34th Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2020 <br>
+              <a href="https://papers.nips.cc/paper/2020/file/c6b8c8d762da15fa8dbbdfb6baf9e260-Paper.pdf">pdf</a>
+              <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
+              </div>
+              <div id="ast" style="display:none">
+              Existing time series forecasting methods fail to either capture stochasticity of data or forecast for a long time horizon due to error accumulation. In this work, we are motivated to address the two issues with a novel time series forecasting model. The model, Adversarial Sparse Transformer (AST), based on GAN, adopts a sparse Transformer as the generator to learn a sparse attention map for forecasting and meanwhile takes a discriminator to improve the prediction performance at a sequence level.
+              </div><br>
 
  			<div onmouseover="document.getElementById('couda').style.display = 'block';"
                 onmouseout="document.getElementById('couda').style.display='none';">
-                <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis
-</papertitle></a><br>
+                <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis</papertitle></a><br>
               <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang*</u></a>,
         <i>Ying Wei*</i>, Qingyao Wu*, 
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  Shuaicheng Niu, 
               <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
               <br>
-              <em>IEEE Transactions on Image Processing</em>, 2020 <br>              
+              <em>IEEE Transactions on Image Processing</em>, 2020 <br>   
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9142394">pdf</a>
               <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
               </div>
               <div id="couda" style="display:none">
@@ -241,8 +292,7 @@ html {
 
 			  <div onmouseover="document.getElementById('translider').style.display = 'block';"
                 onmouseout="document.getElementById('translider').style.display='none';">
-                <papertitle>TranSlider: Transfer Ensemble Learning from Exploitation to Exploration
-</papertitle></a><br>
+                <papertitle>TranSlider: Transfer Ensemble Learning from Exploitation to Exploration</papertitle></a><br>
               <u>Kuo Zhong*</u>,
         <i>Ying Wei*</i>, 
               <a href="https://www-en.sz.tsinghua.edu.cn/INFORMATIONSCIENCE/108547.jhtml">Chun Yuan</a>,  
@@ -250,7 +300,7 @@ html {
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
               <br>
               <em>Twenty-sixth ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2020 <br> 
-              pdf / code                  
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3394486.3403079">pdf</a>                
               <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
               </div>
               <div id="translider" style="display:none">
@@ -259,8 +309,7 @@ html {
 
               <div onmouseover="document.getElementById('grl').style.display = 'block';"
                 onmouseout="document.getElementById('grl').style.display='none';">
-                <papertitle>Graph Few-shot Learning via Knowledge Transfer
-</papertitle></a><br>
+                <papertitle>Graph Few-shot Learning via Knowledge Transfer</papertitle></a><br>
               <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
               <a href="https://chuxuzhang.github.io/">Chuxu Zhang</a>,
         <i>Ying Wei</i>,
@@ -271,7 +320,7 @@ html {
               <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>               
               <br>
               <em>Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)</em>, 2020 <br>     
-              pdf / code     
+              <a href="https://arxiv.org/pdf/1910.03053.pdf">pdf</a>                    
               <!--<a href="https://arxiv.org/abs/1909.03209">arXiv</a>-->
               </div>
               <div id="grl" style="display:none">
@@ -283,8 +332,7 @@ html {
               <div onmouseover="document.getElementById('tnp').style.display = 'block';"
                 onmouseout="document.getElementById('tnp').style.display='none';">
               <a href="https://arxiv.org/pdf/1909.03209.pdf">
-                <papertitle>Transferable Neural Processes for Hyperparameter Optimization
-</papertitle></a><br>
+                <papertitle>Transferable Neural Processes for Hyperparameter Optimization</papertitle></a><br>
 			  <i>Ying Wei</i>,
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>, 
               <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
@@ -308,7 +356,7 @@ html {
               <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
               <br>
               <em>2019 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019 <br>
-              pdf / <a href="https://github.com/hsqmlzno1/Transferable-E2E-ABSA">code</a>
+              <a href="https://www.aclweb.org/anthology/D19-1466.pdf">pdf</a>  / <a href="https://github.com/hsqmlzno1/Transferable-E2E-ABSA">code</a>
             </div>
               <div id="e2e" style="display: none;">
              Jointly extracting aspects and sentiments for sentiment classification requires considerable labeled sentences which are highly labor-intensive. We innovatively alleviate the problem via unsupervised domain adaptation from a sufficiently labeled domain. We propose a  novel  selective  adversarial  learning  method  to learn correlation  vectors between aspects and sentiments and attentively  transfer them across domains.
@@ -327,7 +375,7 @@ Histopathology Cancer Image Classification</papertitle></a><br>
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>
               <br>
               <em>22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>, 2019 <br>
-              pdf 
+              <a href="https://www.researchgate.net/profile/Yifan_Zhang145/publication/336399576_From_Whole_Slide_Imaging_to_Microscopy_Deep_Microscopy_Adaptation_Network_for_Histopathology_Cancer_Image_Classification/links/5de62654a6fdcc2837009f48/From-Whole-Slide-Imaging-to-Microscopy-Deep-Microscopy-Adaptation-Network-for-Histopathology-Cancer-Image-Classification.pdf">pdf</a>
             </div>
               <div id="dman" style="display: none;">
              This work is the first to empower digital pathology image classification directly based on microscopy images. Specifically, we resort to unsupervised domain adaptation from whole slide images to remedy the lack of annotated microscopy images. The proposed resolves intra-domain discrepancy and class imbalance via entropy minimization and sample re-weighting, respectively, besides inter-domain discrepancy.              
