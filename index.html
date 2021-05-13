@@ -196,27 +196,31 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> Our paper "Improving Generalization in Meta-learning via Task Augmentation" was accepted by ICML 2021</li>
+        <li> Our paper "Meta-learning Hyperparameter Performance Prediction with Neural Processes" was accepted by ICML 2021</li>
+        <li> I joined City University of Hong Kong as an Assistant Professor</li>
+        <li> Serving as a program committee member for ICML 2021</li>
         <li> Serving as a senior program committee member for AAAI 2021</li>
         <li> Serving as a program committee member for ICLR 2021</li>
         <li> Serving as a program committee member for WWW 2021</li>
-         <li> Our paper "Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages" is accepted by EMNLP 2020</li>
-        <li> Our paper "Self-Supervised Graph Transformer on Large-Scale Molecular Data" is accepted by NeurIPS 2020</li>
-        <li> Our paper "Adversarial Sparse Transformer for Time Series Forecasting" is accepted by NeurIPS 2020</li>
-        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" is accepted by IEEE Transactions on Image Processing</li>
-        <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" is accepted by KDD 2020</li>
+         <li> Our paper "Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages" was accepted by EMNLP 2020</li>
+        <li> Our paper "Self-Supervised Graph Transformer on Large-Scale Molecular Data" was accepted by NeurIPS 2020</li>
+        <li> Our paper "Adversarial Sparse Transformer for Time Series Forecasting" was accepted by NeurIPS 2020</li>
+        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" was accepted by IEEE Transactions on Image Processing</li>
+        <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" was accepted by KDD 2020</li>
         <li> Serving as a program committee member for ECML/PKDD 2020</li>
         <li> Serving as a program committee member for NeurIPS 2020</li>
         <li> Serving as a program committee member for ICML 2020</li>
-        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by AAAI 2020</li>
+        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" was accepted by AAAI 2020</li>
         <li> Serving as a program committee member for IJCAI 2020</li>
         <li> Serving as a program committee member for WWW 2020</li>
-        <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" is accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
-        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" is accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
+        <li> Our paper "Transferable Neural Processes for Hyperparameter Optimization" was accepted by the <a href="http://metalearning.ml/2019/">Meta Learning</a> workshop at NeurIPS 2019
+        <li> Our paper "Graph Few-shot Learning via Knowledge Transfer" was accepted by the <a href="http://grlearning.github.io">Graph Representation Learning</a> workshop at NeurIPS 2019
         <li> Serving as a reviewer for ICLR 2020</li>
         <li> Recognized as one of the highest-scoring reviewers for NeurIPS 2019
         <li> Serving as a senior program committee member for AAAI 2020
         <li> Invited to be a session chair for IJCAI 2019
-        <li> Our paper "Hierarchically-structured Meta-learning" is accepted by ICML 2019
+        <li> Our paper "Hierarchically-structured Meta-learning" was accepted by ICML 2019
 
 
       </ul>
@@ -230,9 +234,51 @@ html {
 <tbody>
 <td width="100%" valign="middle">
             <heading>Publications</heading> <br><br>
-            (*: equal contribution, <u>___</u>: intern that I have mentored) <br><br>
+            (*: equal contribution, **:  corresponding author) <br><br>
+
+
+            <div onmouseover="document.getElementById('tnp_icml').style.display = 'block';"
+                onmouseout="document.getElementById('tnp_icml').style.display='none';">
+                <papertitle>Meta-learning Hyperparameter Performance Prediction with Neural Processes</papertitle></a><br>
+              <i>Ying Wei</i>, 
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  
+              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+
+
+              <br>
+              <em>38th International Conference on Machine Learning (ICML)</em>, 2021 <br>
+              pdf / 
+              <a href="https://github.com/judyweiying/TNP/">code</a>
+              </div>
+              <div id="tnp_icml" style="display:none">
+              Conventional hyperparameter optimization (HPO) algorithms require considerable hyperparameter evaluation trials,  which impedes their success in wider applications where a single trial on a huge dataset is often costly. Thereon, we are inspired to speed up HPO by transferring knowledge from historical HPO trials on other datasets. The proposed meta-learning algorithm innovates the dataset-aware attention to identify the most similar datasets, and first transfers trial observations, neural processes parameters, and initial hyperparameter configurations collectively from these datasets.
+              </div><br>
 
           <!--<heading2><i>Preprints</i></heading2><br><br>-->
+          <div onmouseover="document.getElementById('metamix').style.display = 'block';"
+                onmouseout="document.getElementById('metamix').style.display='none';">
+                <papertitle>Improving Generalization in Meta-learning via Task Augmentation</papertitle></a><br>
+              <a href="https://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>, 
+              <a href="https://sites.google.com/site/longkaihugo/home">Longkai Huang</a>, 
+              <a href="https://linjunz.github.io/">Linjun Zhang</a>,  <i>Ying Wei**</i>, Li Tian,
+              <a href="https://www.james-zou.com/">James Zou</a>,  
+              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>               
+
+
+              <br>
+              <em>38th International Conference on Machine Learning (ICML)</em>, 2021 <br>
+              pdf / 
+              <a href="https://arxiv.org/pdf/2007.13040.pdf">arXiv</a> /
+              <a href="https://github.com/huaxiuyao/MetaMix">code</a>
+              </div>
+              <div id="metamix" style="display:none">
+              This work addresses the meta-overfitting problem. We solve the problem by augmenting as many tasks as possible. Concretely, we propose the two criteria for valid task augmentation and also two task augmentation methods that satisfy the criteria. Theoretical studies and empirical results both demonstate that the proposed task augmentation strategies outshine state-of-the-art methods by a large margin. Also, the task augmentation strategies remain compatible with any advanced meta-learning algorithms.
+              </div><br>
+
+
+
+
         <div onmouseover="document.getElementById('mgl').style.display = 'block';"
                 onmouseout="document.getElementById('mgl').style.display='none';">
                 <papertitle>Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages</papertitle></a><br>
@@ -282,7 +328,7 @@ html {
  			<div onmouseover="document.getElementById('couda').style.display = 'block';"
                 onmouseout="document.getElementById('couda').style.display='none';">
                 <papertitle>Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis</papertitle></a><br>
-              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang*</u></a>,
+              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5">Yifan Zhang</a>,
         <i>Ying Wei*</i>, Qingyao Wu*, 
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  Shuaicheng Niu, 
               <a href="http://www.tanmingkui.com/">Mingkui Tan</a>,  
@@ -299,8 +345,8 @@ html {
 			  <div onmouseover="document.getElementById('translider').style.display = 'block';"
                 onmouseout="document.getElementById('translider').style.display='none';">
                 <papertitle>TranSlider: Transfer Ensemble Learning from Exploitation to Exploration</papertitle></a><br>
-              <u>Kuo Zhong*</u>,
-        <i>Ying Wei*</i>, 
+              Kuo Zhong*,
+        <i>Ying Wei**</i>, 
               <a href="https://www-en.sz.tsinghua.edu.cn/INFORMATIONSCIENCE/108547.jhtml">Chun Yuan</a>,  
               Haoli Bai,
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>              
@@ -316,9 +362,9 @@ html {
               <div onmouseover="document.getElementById('grl').style.display = 'block';"
                 onmouseout="document.getElementById('grl').style.display='none';">
                 <papertitle>Graph Few-shot Learning via Knowledge Transfer</papertitle></a><br>
-              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="http://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>,
               <a href="https://chuxuzhang.github.io/">Chuxu Zhang</a>,
-        <i>Ying Wei</i>,
+        <i>Ying Wei**</i>,
               <a href="http://www.meng-jiang.com/">Meng Jiang</a>, 
               <a href="https://suhangwang.ist.psu.edu/">Suhang Wang</a>, 
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
@@ -341,7 +387,7 @@ html {
                 <papertitle>Transferable Neural Processes for Hyperparameter Optimization</papertitle></a><br>
 			  <i>Ying Wei</i>,
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>, 
-              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="http://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>,
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>
               <br>
               <em>The Meta Learning Workshop at NeurIPS</em>, 2019 <br>              
@@ -372,7 +418,7 @@ html {
               <div onmouseover="document.getElementById('dman').style.display = 'block';" onmouseout="document.getElementById('dman').style.display='none';">
                 <papertitle>From Whole Slide Imaging to Microscopy: Deep Microscopy Adaptation Network for
 Histopathology Cancer Image Classification</papertitle></a><br>
-              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5"><u>Yifan Zhang</u></a>*,
+              <a href="https://sites.google.com/view/yifan-zhang/%E9%A6%96%E9%A1%B5">Yifan Zhang</a>*,
               <a href="http://cobweb.cs.uga.edu/~hanbo/">Hanbo Chen</a>*, 
               <i>Ying Wei</i>*,
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>, 
@@ -391,8 +437,8 @@ Histopathology Cancer Image Classification</papertitle></a><br>
               <div onmouseover="document.getElementById('hsml').style.display = 'block';" onmouseout="document.getElementById('hsml').style.display='none';">
               	<a href="http://proceedings.mlr.press/v97/yao19b.html">
                 <papertitle>Hierarchically Structured Meta-learning</papertitle></a><br>
-              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
-              <i>Ying Wei</i>,
+              <a href="http://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>,
+              <i>Ying Wei**</i>,
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,
               <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a> 
               <br>
@@ -407,7 +453,7 @@ Histopathology Cancer Image Classification</papertitle></a><br>
               <div onmouseover="document.getElementById('metast').style.display = 'block';" onmouseout="document.getElementById('metast').style.display='none';">
               	<a href="https://arxiv.org/abs/1901.08518">
                 <papertitle>Learning from Multiple Cities: A Meta-Learning Approach for Spatial-Temporal Prediction</papertitle></a><br>
-              <a href="http://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <a href="http://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>,
               Yiding Liu, 
               <i>Ying Wei</i>,
               Xianfeng Tang,
