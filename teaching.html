@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0041)https://people.eecs.berkeley.edu/~barron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- DELETE THIS SCRIPT if you use this HTML, otherwise my analytics will track your page -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->  
+  <meta name="author" content="Ying WEI_Teaching">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+    color: #2ca25f; /*#1772d0;07889b*/
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #E76F51; /*#f7b733;*/ /*f09228;*/
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;  /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 22px;
+    color: #E76F51; /*#fc4a1a;e37222*/
+    }
+    heading2 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;  /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 18px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;  /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    font-weight: 700;
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;  /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 42px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+
+    .header {
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #2ca25f;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: white;
+  color: #E76F51;
+}
+
+/* Style the active/current link*/
+/*.header a.active {
+  background-color: white;
+  color: #0074E1;
+}*/
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+  </style>
+  <title>Ying WEI</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!--- link rel="icon" type="image/png" href="images/seal_icon.png" -->
+
+    <style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: #FFFAF0 !important;
+}
+
+}</style>
+
+<script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+</script>
+</head>
+
+  <body><div id="StayFocusd-infobar" style="display: none; top: 2400px;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+<body><div class="header" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <a href="https://wei-ying.net/index.html" class="logo" style="color:black;font-size:18px;">Ying Wei</a>
+  <div class="header-right">
+    <a href="https://wei-ying.net/index.html">Home</a>
+    <a href="https://wei-ying.net/teaching.html">Teaching</a>
+  </div>
+</div>
+
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        
+        <hr>
+
+  <!-- TEACHING --> 
+  <table width="100%" cellpadding="3"><tbody>
+          <tr>
+            <td style="width: 30px; padding-left: 0px; padding-bottom: 10px;">
+              <img width="35px" src="./images/teaching.png">
+            </td>
+            <td style="padding-bottom: 10px;"><heading>Teaching</heading></td>
+          </tr>
+        </tbody></table>
+
+  <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+    <tr>
+      <td style="padding-left:20px;width:15%;vertical-align:middle"><img width=150px src="./images/cityu.jpeg" style="border-radius:15%;"></td>
+      <td width="75%" valign="center">
+        <heading2>Aritifical Intelligence (CS4486, Undergraduate)</heading2>
+        <p><em>Course Leader</em>, Spring 2021</p>
+        <p>Equip students with the knowledge and skills of problem solving using artificial intelligence (AI) techniques through a demonstrable knowledge in a range of problem solving methods and the associated decision making, optimization and machine learning techniques.
+         </p>
+      </td>
+    </tr>
+
+
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding-top:0px;">
+    <tbody>
+      <tr>
+      <td>
+      <br>
+      <hr>
+      <p></p>
+      <br><br>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+</td></tr></tbody></table></body></html>
