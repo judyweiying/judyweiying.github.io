@@ -341,6 +341,10 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Sep 2021</newsdate>] Our paper "Meta-learning with an Adaptive Task Scheduler" was accepted by NeurIPS 2021</li>
+        <li> [<newsdate>Sep 2021</newsdate>] Our paper "Functionally Regionalized Knowledge Transfer for Low-resource Drug Discovery" was accepted by NeurIPS 2021</li>
+        <li> Serving as a program committee member for ICLR 2022</li>
+        <li> [<newsdate>Sep 2021</newsdate>] Our paper "MetaTS: Meta Teacher-Student Network for Multilingual Sequence Labeling with Minimal Supervision" was accepted by EMNLP 2021</li>
         <li> Serving as a senior program committee member for AAAI 2021</li>
         <li> Serving as a program committee member for NeurIPS 2021</li>
         <li> [<newsdate>May 2021</newsdate>] Our paper "Improving Generalization in Meta-learning via Task Augmentation" was accepted by ICML 2021</li>
@@ -392,18 +396,78 @@ html {
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
 
+            <div onmouseover="document.getElementById('ats').style.display = 'block';"
+                onmouseout="document.getElementById('ats').style.display='none';">
+                <papertitle>Meta-learning with an Adaptive Task Scheduler</papertitle></a><br>
+              <a href="https://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <u>Yu Wang</u>,
+              <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  
+              <a href="http://www.cse.psu.edu/~mzm616/">Mehrdad Mahdavi</a>,  
+              <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>,  
+              <i>Ying Wei*</i>, 
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+
+
+              <br>
+              <em>35th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2021 <br>
+              pdf 
+              </div>
+              <div id="ats" style="display:none">
+              This work pursues an adaptive task scheduler for meta-learning tasks that are likely detrimental with noise or imbalanced given a limited number of meta-training tasks. We for the first time design a neural scheduler to decide which meta-training tasks to use next and train the scheduler to optimize the generalization capacity of the meta-knowledge to unseen tasks. We have shown that such a scheduler theoretically improves the optimization landscape and empirically outshines conventional schedulers (including the commonly adopted random sampling).
+              </div><br>
+
+            <div onmouseover="document.getElementById('frml').style.display = 'block';"
+                onmouseout="document.getElementById('frml').style.display='none';">
+                <papertitle>Functionally Regionalized Knowledge Transfer for Low-resource Drug Discovery</papertitle></a><br>
+              <a href="https://huaxiuyao.mystrikingly.com/"><u>Huaxiu Yao</u></a>,
+              <i>Ying Wei*</i>, 
+              <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>, 
+              Ding Xue,
+              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui Li</a>
+
+
+              <br>
+              <em>35th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2021 <br>
+              pdf 
+              </div>
+              <div id="frml" style="display:none">
+              This paper seeks to remedy the lack of labeled compounds with activities (ADMET properties) in virtual screening (lead optimization) of drug by transferring the knowledge from previous assays, namely in-vivo experiments, collected by different laboratories and against various target proteins. We propose a functionally regionalized meta-learning algorithm, with the architectural compositional capability, to accommodate wildly different assays and meantime capture the relationship between assays. 
+
+
+              </div><br>
+
+              <div onmouseover="document.getElementById('metats').style.display = 'block';"
+                onmouseout="document.getElementById('metats').style.display='none';">
+                <papertitle>MetaTS: Meta Teacher-Student Network for Multilingual SequenceLabeling with Minimal Supervision</papertitle></a><br>
+              <a href="https://hsqmlzno1.github.io/"><u>Zheng Li</u></a>,
+              <a href="https://danqingz.github.io/"><u>Danqing Zhang</u></a>,
+              Tianyu Cao,
+              <i>Ying Wei</i>, 
+              Yiwei Song,
+              Bing Yin
+
+
+              <br>
+              <em>2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2021 <br>
+              pdf 
+              </div>
+              <div id="metats" style="display:none">
+              We explore multilingual sequence labeling with a single unified model for multiple languages and minimal supervision. Specifically, we resort to the teacher-student framework to leverage large multilingual unlabeled data. We propose a meta teacher-student (MetaTS) network that allows the teacher to dynamically adapt its pseudo-annotation strategies by the student's feedback on the generated pseudo-labeled data of each language.
+
+              </div><br>
 
             <div onmouseover="document.getElementById('tnp_icml').style.display = 'block';"
                 onmouseout="document.getElementById('tnp_icml').style.display='none';">
                 <papertitle>Meta-learning Hyperparameter Performance Prediction with Neural Processes</papertitle></a><br>
               <i>Ying Wei</i>, 
               <a href="http://peilinzhao.weebly.com/">Peilin Zhao</a>,  
-              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>
 
 
               <br>
               <em>38th International Conference on Machine Learning (ICML)</em>, 2021 <br>
-              pdf / 
+              <a href="http://proceedings.mlr.press/v139/wei21c/wei21c.pdf">pdf</a> / 
               <a href="https://github.com/judyweiying/TNP/">code</a>
               </div>
               <div id="tnp_icml" style="display:none">
@@ -424,7 +488,7 @@ html {
 
               <br>
               <em>38th International Conference on Machine Learning (ICML)</em>, 2021 <br>
-              pdf / 
+              <a href="http://proceedings.mlr.press/v139/yao21b/yao21b.pdf">pdf</a> / 
               <a href="https://arxiv.org/pdf/2007.13040.pdf">arXiv</a> /
               <a href="https://github.com/huaxiuyao/MetaMix">code</a>
               </div>
