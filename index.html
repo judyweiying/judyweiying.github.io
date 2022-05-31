@@ -341,6 +341,8 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>May 2022</newsdate>] Our paper "Frustratingly Easy Transferability Estimation" was accepted by ICML 2022</li>
+        <li> [<newsdate>May 2022</newsdate>] Our paper "The Role of Deconfounding in Meta-learning" was accepted by ICML 2022</li>
         <li> [<newsdate>Dec 2021</newsdate>] I gave an invited talk at  <a href="https://meta-learn.github.io/2021/">MetaLearn 2021@NeurIPS 2021</a> 
         <li> [<newsdate>Oct 2021</newsdate>] I was selected to receive a NeurIPS 2021 Outstanding Reviewer Award given to the top 8% of reviewers  </li>
         <li> [<newsdate>Sep 2021</newsdate>] Our paper "Meta-learning with an Adaptive Task Scheduler" was accepted by NeurIPS 2021</li>
@@ -399,6 +401,44 @@ html {
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
 
+
+            <div onmouseover="document.getElementById('transrate').style.display = 'block';"
+                onmouseout="document.getElementById('transrate').style.display='none';">
+                <papertitle>Meta-learning with an Adaptive Task Scheduler</papertitle></a><br>
+              <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>,
+              <a href="https://ranger.uta.edu/~huang/">Junzhou Huang</a>,
+              <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>,
+              <i>Ying Wei*</i>
+
+
+              <br>
+              <em>39th International Conference on Machine Learning (ICML)</em>, 2022 <br>
+              <a href="https://arxiv.org/pdf/2106.09362.pdf">pdf</a> 
+              </div>
+              <div id="transrate" style="display:none">
+              We propose a simple (10 lines of codes), efficient (through a single pass over examples of a target task), yet effective (on 26 pre-trained models and 16 downstream tasks) transferability measure named TransRate for fine-tuning pre-trained models. TransRate measures the mutual information between features of target examples by a pre-trained model and labels of them, which we estimate using coding rate.
+              </div><br>
+
+
+            <div onmouseover="document.getElementById('causal').style.display = 'block';"
+                onmouseout="document.getElementById('causal').style.display='none';">
+                <papertitle>The Role of Deconfounding in Meta-learning</papertitle></a><br>
+              <u>Yinjie Jiang</u>,
+              <u>Zhengyu Chen</u>,
+              Luotian Yuan,
+              <i>Ying Wei*</i>,
+              <a href="https://kunkuang.github.io/">Kun Kuang</a>, Xinhai Ye, Zhihua Wang,
+              <a href="https://person.zju.edu.cn/en/wufei#751278">Fei Wu*</a>
+
+
+              <br>
+              <em>39th International Conference on Machine Learning (ICML)</em>, 2022 <br>
+              pdf
+              </div>
+              <div id="causal" style="display:none">
+              This work offers a novel causal perspective of meta-learning, through which we explain the memorization effect as a confounder and frame previous anti-memorization methods as  different deconfounder approaches. Derived from the causal inference principle of front-door adjustment, we propose two frustratingly easy but effective deconfounder algorithms.
+              </div><br>
+
             <div onmouseover="document.getElementById('ats').style.display = 'block';"
                 onmouseout="document.getElementById('ats').style.display='none';">
                 <papertitle>Meta-learning with an Adaptive Task Scheduler</papertitle></a><br>
@@ -414,7 +454,8 @@ html {
 
               <br>
               <em>35th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2021 <br>
-              pdf 
+              <a href="https://proceedings.neurips.cc/paper/2021/file/3dc4876f3f08201c7c76cb71fa1da439-Paper.pdf">pdf</a>  /
+              <a href="https://github.com/huaxiuyao/ATS">code</a> 
               </div>
               <div id="ats" style="display:none">
               This work pursues an adaptive task scheduler for meta-learning tasks that are likely detrimental with noise or imbalanced given a limited number of meta-training tasks. We for the first time design a neural scheduler to decide which meta-training tasks to use next and train the scheduler to optimize the generalization capacity of the meta-knowledge to unseen tasks. We have shown that such a scheduler theoretically improves the optimization landscape and empirically outshines conventional schedulers (including the commonly adopted random sampling).
@@ -433,7 +474,7 @@ html {
 
               <br>
               <em>35th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2021 <br>
-              pdf 
+              <a href="https://papers.nips.cc/paper/2021/file/459a4ddcb586f24efd9395aa7662bc7c-Paper.pdf">pdf</a> 
               </div>
               <div id="frml" style="display:none">
               This paper seeks to remedy the lack of labeled compounds with activities (ADMET properties) in virtual screening (lead optimization) of drug by transferring the knowledge from previous assays, namely in-vivo experiments, collected by different laboratories and against various target proteins. We propose a functionally regionalized meta-learning algorithm, with the architectural compositional capability, to accommodate wildly different assays and meantime capture the relationship between assays. 
@@ -454,7 +495,7 @@ html {
 
               <br>
               <em>2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2021 <br>
-              pdf 
+              <a href="https://aclanthology.org/2021.emnlp-main.255.pdf">pdf</a> 
               </div>
               <div id="metats" style="display:none">
               We explore multilingual sequence labeling with a single unified model for multiple languages and minimal supervision. Specifically, we resort to the teacher-student framework to leverage large multilingual unlabeled data. We propose a meta teacher-student (MetaTS) network that allows the teacher to dynamically adapt its pseudo-annotation strategies by the student's feedback on the generated pseudo-labeled data of each language.
