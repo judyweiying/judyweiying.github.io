@@ -341,6 +341,11 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
+        <li> [<newsdate>Sep 2022</newsdate>] Our paper "Improving Task-Specific Generalization in Few-Shot Learning via Adaptive Vicinal Risk Minimization" was accepted by NeurIPS 2022</li>
+        <li> [<newsdate>Sep 2022</newsdate>] Our paper "GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy" was accepted by NeurIPS 2022</li>
+        <li> Serving as an area chair for MetaLearn 2022@NeurIPS 2022</li>
+        <li> Serving as a program committee member for ICLR 2023</li>
         <li> Serving as a senior program committee member for AAAI 2023</li>
         <li> [<newsdate>May 2022</newsdate>] Our paper "Frustratingly Easy Transferability Estimation" was accepted by ICML 2022</li>
         <li> [<newsdate>May 2022</newsdate>] Our paper "The Role of Deconfounding in Meta-learning" was accepted by ICML 2022</li>
@@ -402,6 +407,58 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+
+              <div onmouseover="document.getElementById('atu').style.display = 'block';"
+                onmouseout="document.getElementById('atu').style.display='none';">
+                <papertitle>Adversarial Task Up-sampling for Meta-learning</papertitle></a><br>
+              Yichen Wu,
+              <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang*</a>,
+              <i>Ying Wei*</i>
+
+
+              <br>
+              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
+              pdf / code
+              </div>
+              <div id="atu" style="display:none">
+              This work named Adversarial Task Up-sampling (ATU) pushes ahead augmentation of sufficiently imaginary meta-training tasks with task-correctness guarantee, where we seek an approach that up-samples meta-training tasks from the task manifold via a task up-sampling network. ATU also suffices to generate tasks that can maximally contribute to the latest meta-learner by maximizing an adversarial loss. 
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('vrm').style.display = 'block';"
+                onmouseout="document.getElementById('vrm').style.display='none';">
+                <papertitle>Improving Task-Specific Generalization in Few-Shot Learning via Adaptive Vicinal Risk Minimization</papertitle></a><br>
+              <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>,
+              <i>Ying Wei*</i>
+
+
+              <br>
+              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
+              pdf 
+              </div>
+              <div id="vrm" style="display:none">
+              This work focuses on improving task-specific generalization in the meta-testing stage, where we derive the vicinal loss function that approximates the true task distribution with aggregation of per-sample Gaussian-like vicinal distributions. We estimate the statistical parameters of the vicinal distribution for each training sample by 1) initiating a random walk from the sample and 2) computing the weighted mean and variance of those unlabeled data passed by the walk. The proposed method outperforms state-of-the-art few-shot learning baselines in four benchmarks.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('grasp').style.display = 'block';"
+                onmouseout="document.getElementById('grasp').style.display='none';">
+                <papertitle>GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy</papertitle></a><br>
+              Yemin Yu,
+              <i>Ying Wei*</i>,
+              <a href="https://kunkuang.github.io/">Kun Kuang</a>,
+              <a href="https://person.zju.edu.cn/en/hzx">Zhengxing Huang</a>,
+              <a href="https://huaxiuyao.mystrikingly.com/">Huaxiu Yao</a>,
+              <a href="https://person.zju.edu.cn/en/wufei#751278">Fei Wu*</a>
+
+
+              <br>
+              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
+              pdf / code
+              </div>
+              <div id="grasp" style="display:none">
+              Retrosynthetic planning occupies a crucial position in synthetic chemistry and, accordingly, drug discovery, which aims to find synthetic pathways of a target molecule through a sequential decision-making process on a set of feasible reactions. This work named Goal-dRiven Actor-critic retroSynthetic Planning (GRASP) framework first (1) formulates the retrosynthetic planning into a reinforcement learning framework which enjoys more efficient and accurate value estimation of a molecule, and (2) achieves goal-driven retrosynthesis navigation toward a user-demand objective. 
+              </div><br>
 
 
             <div onmouseover="document.getElementById('transrate').style.display = 'block';"
