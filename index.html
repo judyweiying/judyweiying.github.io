@@ -408,6 +408,24 @@ html {
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
 
+               <div onmouseover="document.getElementById('pmsr').style.display = 'block';"
+                onmouseout="document.getElementById('pmsr').style.display='none';">
+                <papertitle>Learning Chemical Rules of Retrosynthesis with Pre-training</papertitle></a><br>
+                Yinjie Jiang,
+                <i>Ying Wei*</i>,
+                <a href="https://person.zju.edu.cn/en/wufei#751278">Fei Wu*</a>,
+                <a href="https://person.zju.edu.cn/en/hzx">Zhengxing Huang</a>,
+                <a href="https://kunkuang.github.io/">Kun Kuang</a>,
+                Zhihua Wang
+              <br>
+              <em>Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI)</em>, 2023 <br>
+              pdf / code
+              </div>
+              <div id="pmsr" style="display:none">
+              Towards the very burgeoning research area of AI-aided retrosythesis, we propose a pre-training solution to address the pronounced remaining issue regarding template-free methods, i.e., failing to conform to chemical rules. Concretely, we enforce the atom conservation rule via a molecule reconstruction pre-training task, and the reaction rule that dictates reaction centers via a reaction type guided contrastive pre-training task. Our empirical results show that the pre-training solution significantly boosts the single-step retrosynthesis accuracies.
+              </div><br>
+
+
               <div onmouseover="document.getElementById('atu').style.display = 'block';"
                 onmouseout="document.getElementById('atu').style.display='none';">
                 <papertitle>Adversarial Task Up-sampling for Meta-learning</papertitle></a><br>
@@ -418,7 +436,7 @@ html {
 
               <br>
               <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
-              pdf / code
+              <a href="pubs/ATU_NeurIPS2022.pdf">pdf</a> / code
               </div>
               <div id="atu" style="display:none">
               This work named Adversarial Task Up-sampling (ATU) pushes ahead augmentation of sufficiently imaginary meta-training tasks with task-correctness guarantee, where we seek an approach that up-samples meta-training tasks from the task manifold via a task up-sampling network. ATU also suffices to generate tasks that can maximally contribute to the latest meta-learner by maximizing an adversarial loss. 
@@ -434,7 +452,7 @@ html {
 
               <br>
               <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
-              pdf 
+              <a href="pubs/VRM_NeurIPS2022.pdf">pdf</a> 
               </div>
               <div id="vrm" style="display:none">
               This work focuses on improving task-specific generalization in the meta-testing stage, where we derive the vicinal loss function that approximates the true task distribution with aggregation of per-sample Gaussian-like vicinal distributions. We estimate the statistical parameters of the vicinal distribution for each training sample by 1) initiating a random walk from the sample and 2) computing the weighted mean and variance of those unlabeled data passed by the walk. The proposed method outperforms state-of-the-art few-shot learning baselines in four benchmarks.
@@ -454,7 +472,7 @@ html {
 
               <br>
               <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
-              pdf / code
+              <a href="pubs/GRASP_NeurIPS2022.pdf">pdf</a>  / code
               </div>
               <div id="grasp" style="display:none">
               Retrosynthetic planning occupies a crucial position in synthetic chemistry and, accordingly, drug discovery, which aims to find synthetic pathways of a target molecule through a sequential decision-making process on a set of feasible reactions. This work named Goal-dRiven Actor-critic retroSynthetic Planning (GRASP) framework first (1) formulates the retrosynthetic planning into a reinforcement learning framework which enjoys more efficient and accurate value estimation of a molecule, and (2) achieves goal-driven retrosynthesis navigation toward a user-demand objective. 
@@ -489,7 +507,7 @@ html {
 
               <br>
               <em>39th International Conference on Machine Learning (ICML)</em>, 2022 <br>
-              pdf
+              <a href="https://proceedings.mlr.press/v162/jiang22a/jiang22a.pdf">pdf</a>
               </div>
               <div id="causal" style="display:none">
               This work offers a novel causal perspective of meta-learning, through which we explain the memorization effect as a confounder and frame previous anti-memorization methods as  different deconfounder approaches. Derived from the causal inference principle of front-door adjustment, we propose two frustratingly easy but effective deconfounder algorithms.
@@ -508,12 +526,30 @@ html {
               <a href="https://cheme.mit.edu/profile/connor-w-coley/">Connor W. Coley</a>,
               <i>Ying Wei*</i>
 
-              <br>To appear at
+              <br>
               <em>Engineering</em>, 2022<br>
-              pdf
+              <a href="https://reader.elsevier.com/reader/sd/pii/S2095809922005665?token=0883EE55C7B9040EC2FA7796B14B5D5D4BC98DE268C89277A42051EA8E9B1324123FFF15E0FF1CF812525FE90A3F4027&originRegion=us-east-1&originCreation=20230130141648">pdf</a>
               </div>
               <div id="retro_survey" style="display:none">
               In recent years, there has been a dramatic rise in interest in retrosynthesis prediction with AI techniques. This survey describes the current landscape of AI-driven retrosynthesis prediction, including (1) formal definitions of the retrosynthesis problem, (2) the outstanding research challenges therein, (3) related AI techniques and recent progress that enable retrosynthesis prediction, (4) a novel landscape that provides a comprehensive categorization of different retrosynthesis prediction components, (5) how AI reshapes each component, and (6) promising areas for future research.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('sshtc').style.display = 'block';"
+                onmouseout="document.getElementById('sshtc').style.display='none';">
+                <papertitle>Disentangling Task Relations for Few-shot Text Classification via Self-Supervised Hierarchical Task Clustering</papertitle></a><br>
+              Juan Zha,
+              <a href="https://hsqmlzno1.github.io/">Zheng Li</a>,
+              <i>Ying Wei</i>,
+              <a href="https://yuzhanghk.github.io/">Yu Zhang</a>
+
+
+              <br>
+              <em>2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2022 <br>
+              <a href="https://arxiv.org/pdf/2211.08588.pdf">pdf</a>
+              </div>
+              <div id="sshtc" style="display:none">
+              This work named self-supervised hierarchical task cluster (SS-HTC) improves few-shot text classification. SS-HTC  customizes cluster-specific knowledge by dynamically organizing heterogeneous tasks into different clusters in hierarchical levels and also disentangles underlying relations between tasks to improve the interpretability. Extensive experiments on five public FSTC benchmark datasets demonstrate the effectiveness of SS-HTC.
               </div><br>
 
 
@@ -529,7 +565,7 @@ html {
 
               <br>
               <em>30th ACM International Conference on Multimedia (MM)</em>, 2022 <br>
-              pdf
+              <a href="https://arxiv.org/pdf/2204.12743.pdf">pdf</a>
               </div>
               <div id="ste" style="display:none">
               This work studies a novel self-supervised text erasing framework to alleviate the heavy reliance on costly annotations. Specifically, we propose a style-aware image synthesis function that generates synthetic images with diverse style texts and a policy network that controls the synthetic mechanisms to bridge the text style gap between synthetic and real-world data. We have also constructed a new dataset called PosterErase.
@@ -546,6 +582,7 @@ html {
               <a href="http://www.cse.psu.edu/~mzm616/">Mehrdad Mahdavi</a>,  
               <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>,  
               <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+
 
 
               <br>
