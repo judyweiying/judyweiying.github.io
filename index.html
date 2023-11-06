@@ -342,6 +342,12 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Sep 2023</newsdate>] Our paper "Towards Anytime Fine-tuning: Continually Pre-trained Language Models with Hypernetwork Prompts" was accepted by EMNLP 2023</li>
+        <li> [<newsdate>Sep 2023</newsdate>] Our paper "Secure Out-of-Distribution Task Generalization with Energy-Based Models" was accepted by NeurIPS 2023</li>
+        <li> [<newsdate>Sep 2023</newsdate>] Our paper "Does Continual Learning Meet Compositionality? New Benchmarks and An Evaluation Framework" was accepted by NeurIPS 2023</li>
+        <li> [<newsdate>Sep 2023</newsdate>] I joined Nanyang Technological University as an Assistant Professor</li>
+        <li> [<newsdate>July 2023</newsdate>] Our paper "Concept-wise Fine-tuning Matters in Preventing Negative Transfer" was accepted by ICCV 2023</li>
+        <li> [<newsdate>Apr 2023</newsdate>] Our paper "Learning to Substitute Spans towards Improving Compositional Generalization" was accepted by ACL 2023</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "Improving Task-Specific Generalization in Few-Shot Learning via Adaptive Vicinal Risk Minimization" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy" was accepted by NeurIPS 2022</li>
@@ -363,15 +369,15 @@ html {
         <li> [<newsdate>May 2021</newsdate>] Our paper "Improving Generalization in Meta-learning via Task Augmentation" was accepted by ICML 2021</li>
         <li> [<newsdate>May 2021</newsdate>] Our paper "Meta-learning Hyperparameter Performance Prediction with Neural Processes" was accepted by ICML 2021</li>
         <li> [<newsdate>Feb 2021</newsdate>] I joined City University of Hong Kong as an Assistant Professor</li>
-        <li> Serving as a program committee member for ICML 2021</li>
+<!--         <li> Serving as a program committee member for ICML 2021</li>
         <li> Serving as a senior program committee member for AAAI 2021</li>
         <li> Serving as a program committee member for ICLR 2021</li>
         <li> Serving as a program committee member for WWW 2021</li>
          <li> Our paper "Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages" was accepted by EMNLP 2020</li>
         <li> Our paper "Self-Supervised Graph Transformer on Large-Scale Molecular Data" was accepted by NeurIPS 2020</li>
         <li> Our paper "Adversarial Sparse Transformer for Time Series Forecasting" was accepted by NeurIPS 2020</li>
-        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" was accepted by IEEE Transactions on Image Processing</li>
-        <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" was accepted by KDD 2020</li>
+        <li> Our paper "Collaborative Unsupervised Domain Adaptation for Medical Image Diagnosis" was accepted by IEEE Transactions on Image Processing</li> -->
+<!--         <li> Our paper "TranSlider: Transfer Ensemble Learning from Exploitation to Exploration" was accepted by KDD 2020</li>
         <li> Serving as a program committee member for ECML/PKDD 2020</li>
         <li> Serving as a program committee member for NeurIPS 2020</li>
         <li> Serving as a program committee member for ICML 2020</li>
@@ -384,7 +390,7 @@ html {
         <li> Recognized as one of the highest-scoring reviewers for NeurIPS 2019
         <li> Serving as a senior program committee member for AAAI 2020
         <li> Invited to be a session chair for IJCAI 2019
-        <li> Our paper "Hierarchically-structured Meta-learning" was accepted by ICML 2019
+        <li> Our paper "Hierarchically-structured Meta-learning" was accepted by ICML 2019 -->
 
 
       </ul>
@@ -408,6 +414,102 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+
+              <div onmouseover="document.getElementById('hprompt_cpt').style.display = 'block';"
+                onmouseout="document.getElementById('hprompt_cpt').style.display='none';">
+                <papertitle>Towards Anytime Fine-tuning: Continually Pre-trained Language Models with Hypernetwork Prompts</papertitle></a><br>
+                Gangwei Jiang, Caigao Jiang, Siqiao Xue, James Y. Zhang, Jun Zhou, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian*</a>, 
+                <i>Ying Wei*</i>
+              <br>
+              <em>2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2023<br>
+              <a href="pubs/HPrompt_CPT_EMNLP2023.pdf">pdf</a> / code
+              </div>
+              <div id="hprompt_cpt" style="display:none">
+              This study first investigates "anytime fine-tuning" effectiveness of existing continual learning approaches, concluding with unanimously decreased performance on unseen domains. To this end, we propose a prompt-guided continual pre-training method, where we train a hypernetwork to generate domain-specific prompts by both agreement and disagreement losses. Our method achieves improvements of 3.57% and 3.4% on two real-world datasets (including domain shift and temporal shift), respectively.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('ebml').style.display = 'block';"
+                onmouseout="document.getElementById('ebml').style.display='none';">
+                <papertitle>Secure Out-of-Distribution Task Generalization with Energy-Based Models</papertitle></a><br>
+                Shengzhuang Chen,
+                <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>,
+                <a href="https://jonathan-schwarz.github.io/">Jonathan Richard Schwarz</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>,
+                <i>Ying Wei*</i>
+              <br>
+              <em>Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023<br>
+              <a href="pubs/EBML_NeurIPS2023.pdf">pdf</a> / code
+              </div>
+              <div id="ebml" style="display:none">
+              In this work, we propose a single coherent framework named Energy-Based Meta-Learning (EBML) that supports both detection and adaptation of OOD tasks, while remaining compatible with off-the-shelf meta-learning backbones. EBML learns to characterize any arbitrary meta-training task distribution with the composition of two expressive neural-network-based energy functions. We deploy the sum of the two energy functions, being proportional to the joint distribution of a task, as a reliable score for detecting OOD tasks; during meta-testing, we adapt the OOD task to in-distribution tasks by energy minimization.
+              </div><br>
+
+
+               <div onmouseover="document.getElementById('comp_bench').style.display = 'block';"
+                onmouseout="document.getElementById('comp_bench').style.display='none';">
+                <papertitle>Does Continual Learning Meet Compositionality? New Benchmarks and An Evaluation Framework</papertitle></a><br>
+                Weiduo Liao,
+                <i>Ying Wei*</i>,
+                Mingchen Jiang, 
+                <a href="https://www.cs.cityu.edu.hk/~qzhan7/index.html">Qingfu Zhang*</a>,
+                <a href="https://cse.sustech.edu.cn/faculty/~hisao/">Hisao Ishibuchi*</a>
+              <br>
+              <em>Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023<br>
+              <em>Track on Datasets and Benchmarks</em><br>
+              <a href="https://openreview.net/pdf?id=38bZuqQOhC">pdf</a> / code
+              </div>
+              <div id="comp_bench" style="display:none">
+             We present two vision benchmarks, namely Compositional GQA (CGQA) and Compositional OBJects365 (COBJ), along with a novel evaluation framework called Compositional Few-Shot Testing (CFST). Comprehensive empirical results on systematicity, productivity, and substitutivity aspects of compositional generalization demonstrate that current continual learning techniques do exhibit somewhat favorable compositionality in their learned feature extractors, while future research on modularity is urgently needed.
+              </div><br>
+
+
+             <div onmouseover="document.getElementById('concept_tuning').style.display = 'block';"
+                onmouseout="document.getElementById('concept_tuning').style.display='none';">
+                <papertitle>Concept-wise Fine-tuning Matters in Preventing Negative Transfer</papertitle></a><br>
+                Yunqiao Yang,
+                <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>,
+                <i>Ying Wei*</i>
+              <br>
+              <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023<br>
+              <a href="pubs/ConceptTuning_ICCV2023.pdf">pdf</a> / code
+              </div>
+              <div id="concept_tuning" style="display:none">
+              We propose a Concept-wise fine-Tuning (Concept-Tuning) approach which refines feature representations in the level of patches with each patch encoding a concept. Concept-Tuning minimizes the negative impacts of rare features and spuriously correlated features in a pre-trained model by (1) maximizing the mutual information between examples in the same category with regard to a slice of rare features (a patch) and (2) applying front-door adjustment via attention neural networks in channels and feature slices (patches).
+              </div><br>
+
+
+             <div onmouseover="document.getElementById('spansub').style.display = 'block';"
+                onmouseout="document.getElementById('spansub').style.display='none';">
+                <papertitle>Learning to Substitute Spans towards Improving Compositional Generalization</papertitle></a><br>
+                Zhaoyi Li,
+                <i>Ying Wei*</i>,
+                <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian*</a>
+              <br>
+              <em>Sixty-first Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+              <a href="https://aclanthology.org/2023.acl-long.157.pdf">pdf</a> / code
+              </div>
+              <div id="spansub" style="display:none">
+                This work introduces a compositional data augmentation approach that incurs additional compositional inductive biasto pre-trained models. We first propose a novel compositional augmentation strategy dubbed Span Substitution (SpanSub) that enables <em>multi-grained</em> composition of substantial substructures in the whole training set. Over and above that, we introduce the Learning to Substitute Span (L2S2) framework which empowers the learning of span substitution probabilities in SpanSub in an end-to-end manner by maximizing the loss of neural sequence models, so as to <em>outweigh those challenging compositions</em> with elusive concepts and novel surroundings
+              </div><br>
+
+               <div onmouseover="document.getElementById('biqa').style.display = 'block';"
+                onmouseout="document.getElementById('biqa').style.display='none';">
+                <papertitle>Blind Image Quality Assessment via Vision-Language Correspondence: A Multitask Learning Perspective</papertitle></a><br>
+                <a href="https://sites.google.com/view/r-panda/home">Weixia Zhang,</a>
+                 Guangtao Zhai, 
+                <i>Ying Wei</i>,
+                Xiaokang Yang, 
+                <a href="https://kedema.org/">Kede Ma</a>
+              <br>
+              <em>IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2023<br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Blind_Image_Quality_Assessment_via_Vision-Language_Correspondence_A_Multitask_Learning_CVPR_2023_paper.pdf">pdf</a> 
+              </div>
+              <div id="biqa" style="display:none">
+               We develop a general and automated multitask learning scheme for blind image quality assessment to exploit auxiliary knowledge from other tasks, in a way that the model parameter sharing and the loss weighting are determined automatically. Specifically, we first describe all candidate label combinations (from multiple tasks) using a textual template, and compute the joint probability from the cosine similarities of the visual-textual embeddings in CLIP. Predictions of each task can be inferred from the joint distribution, and optimized by carefully designed loss functions.
+              </div><br>
+
+
 
                <div onmouseover="document.getElementById('pmsr').style.display = 'block';"
                 onmouseout="document.getElementById('pmsr').style.display='none';">
