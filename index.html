@@ -290,10 +290,10 @@ html {
         <name>Ying WEI (魏 颖)</name><br>
         ying.wei [at] ntu [dot] edu [dot] sg
         </p>
-        <p>I am currently an Assistant Professor with <a href="https://www.cs.cityu.edu.hk/">School of Computer Science and Engineering, Nanyang Technological University</a>.
+        <p>I am currently a <a href="https://www.ntu.edu.sg/research/research-careers/nanyang-assistant-professorship-(nap)#Content_C003_Col00">Nanyang Assistant Professor</a> with <a href="https://www.cs.cityu.edu.hk/">School of Computer Science and Engineering, Nanyang Technological University</a>.
         </p>
         <p style="text-align: justify;">
-        I am generally interested in developing algorithms that equip machines with more general intelligence via knowledge transfer.
+        I am generally interested in developing algorithms that equip machines with more general intelligence via knowledge transfer and compositionality.
         This includes allowing continuous transfer and adaptation of the knowledge previous learned (nowadays in LLMs) to quickly learn the current task with minimal human supervision, and autonomously evaluating the success of knowledge transfer. I am also passionate about applying these algorithms into real-world applications with small data, e.g., drug discovery.
         </p>
         <p style="text-align: justify;">
@@ -342,10 +342,16 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Jan 2024</newsdate>] Our paper "Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction" was accepted by ICLR 2024 (oral)!</li>
+        <li> [<newsdate>Jan 2024</newsdate>] Our paper "Gradual Domain Adaptation via Gradient Flow" was accepted by ICLR 2024 (spotlight)!</li>
+        <li> [<newsdate>Jan 2024</newsdate>] Our paper "Active Retrosynthetic Planning Aware of Route Quality" was accepted by ICLR 2024!</li>
+        <li> [<newsdate>Jan 2024</newsdate>] Serving as an Area Chair for ICML 2024</li>
+        <li> [<newsdate>Jan 2024</newsdate>] Serving as an Action Editor for Transactions on Machine Learning Research (TMLR)</li>
+        <li> [<newsdate>Jan 2024</newsdate>] Our paper "RetroOOD: Understanding Out-of-Distribution Generalization in Retrosynthesis Prediction" was accepted by AAAI 2024!</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Towards Anytime Fine-tuning: Continually Pre-trained Language Models with Hypernetwork Prompts" was accepted by EMNLP 2023</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Secure Out-of-Distribution Task Generalization with Energy-Based Models" was accepted by NeurIPS 2023</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Does Continual Learning Meet Compositionality? New Benchmarks and An Evaluation Framework" was accepted by NeurIPS 2023</li>
-        <li> [<newsdate>Sep 2023</newsdate>] I joined Nanyang Technological University as an Assistant Professor</li>
+        <li> [<newsdate>Sep 2023</newsdate>] I joined Nanyang Technological University as a Nanyang Assistant Professor</li>
         <li> [<newsdate>July 2023</newsdate>] Our paper "Concept-wise Fine-tuning Matters in Preventing Negative Transfer" was accepted by ICCV 2023</li>
         <li> [<newsdate>Apr 2023</newsdate>] Our paper "Learning to Substitute Spans towards Improving Compositional Generalization" was accepted by ACL 2023</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
@@ -414,6 +420,58 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+              <div onmouseover="document.getElementById('vr-mcl').style.display = 'block';"
+                onmouseout="document.getElementById('vr-mcl').style.display='none';">
+                <papertitle>Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction</papertitle></a><br>
+                Yichen Wu, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>, Renzhen Wang, <a href="https://gr.xjtu.edu.cn/web/dymeng">Deyu Meng</a>, 
+                <i>Ying Wei*</i>
+              <br>
+              <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024 (<newsdate>oral</newsdate>) <br>
+              <a href="https://openreview.net/pdf?id=TpD2aG1h0D">pdf</a>  / code 
+              </div>
+              <div id="vr-mcl" style="display:none">
+              This study revisits Meta-Continual Learning (Meta-CL) and for the first time bridge Meta-CL with regularization-based methods. Concretely, Meta-CL implicitly approximates Hessian in an online manner, which enjoys the benefits of timely adaptation but meantime suffers from high variance induced by random memory buffer sampling. We are thus highly motivated to combine the best of both worlds, through the proposal of Variance Reduced Meta-CL (VR-MCL) to achieve both timely and accurate Hessian approximation. 
+              </div><br>
+
+              <div onmouseover="document.getElementById('ggf').style.display = 'block';"
+                onmouseout="document.getElementById('ggf').style.display='none';">
+                <papertitle>Gradual Domain Adaptation via Gradient Flow</papertitle></a><br>
+                Zhan Zhuang, <a href="https://yuzhanghk.github.io/">Yu Zhang</a>, <i>Ying Wei*</i>
+              <br>
+              <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024 (<newsdate>spotlight</newsdate>) <br>
+              <a href="https://openreview.net/pdf?id=iTTZFKrlGV">pdf</a>  / code
+              </div>
+              <div id="ggf" style="display:none">
+              To address the challenge of ineffective intermediate domains for gradual domain adaptation (GDA), this work explores gradient flow to generate intermediate domains with preserving labels, thereby enabling us a fine-tuning method for GDA. We employ the Wasserstein gradient flow in Kullback–Leibler divergence to transport samples from the source to the target domain. To simulate the dynamics, we utilize the Langevin algorithm. Since the Langevin algorithm disregards label information and introduces diffusion noise, we introduce classifier-based and sample-based potentials to avoid label switching and dramatic deviations in the sampling process. 
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('arp').style.display = 'block';"
+                onmouseout="document.getElementById('arp').style.display='none';">
+                <papertitle>Active Retrosynthetic Planning Aware of Route Quality</papertitle></a><br>
+                <u>Luotian Yuan</u>, <u>Yemin Yu</u>, <i>Ying Wei*</i>, <a href="https://enkiwang.github.io/">Yongwei Wang</a>, Zhihua Wang, <a href="https://person.zju.edu.cn/en/wufei#751278">Fei Wu*</a>
+              <br>
+              <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024<br>
+              <a href="https://openreview.net/pdf?id=h7DGnWGeos">pdf</a>  / code
+              </div>
+              <div id="arp" style="display:none">
+              This study addresses the long-standing challenge of route quality evaluation in retrosynthetic planning, through an Active Retrosynthetic Planning (ARP) framework that involves a minimum annotation from chemists. The proposed ARP remains compatible with established retrosynthetic planners, which trains an actor that decides whether to query the quality of a reaction and resorts to a critic to estimate the value of a molecule with its preceding reaction quality as input. On both the benchmark and an expert dataset, ARP outperforms the existing state-of-the-art approach by 6.2% in route quality while reducing the query cost by 12.8%.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('retroood').style.display = 'block';"
+                onmouseout="document.getElementById('retroood').style.display='none';">
+                <papertitle>RetroOOD: Understanding Out-of-Distribution Generalization in Retrosynthesis Prediction</papertitle></a><br>
+                <u>Yemin Yu</u>, <u>Luotian Yuan</u>, <i>Ying Wei*</i>, <a href="https://hanyugao.com/">Hanyu Gao</a>, Xinhai Ye, Zhihua Wang, <a href="https://person.zju.edu.cn/en/wufei#751278">Fei Wu</a>
+              <br>
+              <em>Thirty-eighth Annual AAAI Conference on Artificial Intelligence (AAAI)</em>, 2024<br>
+              <a href="https://arxiv.org/pdf/2312.10900.pdf">pdf</a>  / code
+              </div>
+              <div id="retroood" style="display:none">
+              Despite steady progress of existing retrosynthesis methods on standard benchmarks, our understanding of  them under the premise of distribution shifts remains stagnant. This study fills in the gap by (1) formally sorting out two types of distribution shifts in retrosynthesis prediction, (2) constructing two groups of benchmark datasets, (3) conducting comprehensive experiments to reveal the limitations of previous in-distribution evaluation and state-of-the-art methods. and (4) proposing two model-agnostic techniques that can improve the OOD generalization of arbitrary off-the-shelf retrosynthesis prediction algorithms.
+              </div><br>
+
+
 
               <div onmouseover="document.getElementById('hprompt_cpt').style.display = 'block';"
                 onmouseout="document.getElementById('hprompt_cpt').style.display='none';">
@@ -486,7 +544,7 @@ html {
                 <i>Ying Wei*</i>,
                 <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian*</a>
               <br>
-              <em>Sixty-first Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+              <em>Sixty-first Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023 (<newsdate>oral</newsdate>)<br>
               <a href="https://aclanthology.org/2023.acl-long.157.pdf">pdf</a> / <a href="https://github.com/NTU-LANTERN/Compgen_l2s2.git">code</a>
               </div>
               </div>
@@ -539,7 +597,7 @@ html {
 
 
               <br>
-              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
+              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 (<newsdate>spotlight</newsdate>) <br>
               <a href="pubs/ATU_NeurIPS2022.pdf">pdf</a> / <a href="https://github.com/NTU-LANTERN/Adversarial_Task_Up-sampling_for_Meta-learning">code</a>
               </div>
               <div id="atu" style="display:none">
@@ -555,7 +613,7 @@ html {
 
 
               <br>
-              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
+              <em>36th Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 (<newsdate>spotlight</newsdate>)<br>
               <a href="pubs/VRM_NeurIPS2022.pdf">pdf</a> 
               </div>
               <div id="vrm" style="display:none">
@@ -1007,7 +1065,7 @@ Histopathology Cancer Image Classification</papertitle></a><br>
               <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>,            
               <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>  
               <br>
-              <em>35th International Conference on Machine Learning (ICML)</em>, 2018 <br>
+              <em>35th International Conference on Machine Learning (ICML)</em>, 2018 (<newsdate>long talk</newsdate>)<br>
               <a href="http://proceedings.mlr.press/v80/wei18a/wei18a.pdf">pdf</a>
             </div>
               <div id="l2t" style="display: none;">
