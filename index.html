@@ -342,6 +342,8 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Jan 2024</newsdate>] Serving as an Area Chair for NeurIPS 2024</li>
+        <li> [<newsdate>Feb 2024</newsdate>] Our paper "MoPE-CLIP: Structured Pruning for Efficient Vision-Language Models with Module-wise Pruning Error Metric" was accepted by CVPR 2024!</li>
         <li> [<newsdate>Jan 2024</newsdate>] Our paper "Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction" was accepted by ICLR 2024 (oral)!</li>
         <li> [<newsdate>Jan 2024</newsdate>] Our paper "Gradual Domain Adaptation via Gradient Flow" was accepted by ICLR 2024 (spotlight)!</li>
         <li> [<newsdate>Jan 2024</newsdate>] Our paper "Active Retrosynthetic Planning Aware of Route Quality" was accepted by ICLR 2024!</li>
@@ -420,6 +422,19 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+            <div onmouseover="document.getElementById('mope-clip').style.display = 'block';"
+                onmouseout="document.getElementById('mope-clip').style.display='none';">
+                <papertitle>MoPE-CLIP: Structured Pruning for Efficient Vision-Language Models with Module-wise Pruning Error Metric</papertitle></a><br>
+                Haokun Lin, <a href="https://haolibai.github.io/">Haoli Bai</a>, Zhili Liu, <a href="https://houlu369.github.io/">Lu Hou</a>, Muyi Sun, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>,
+                <i>Ying Wei*</i>, <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun*</a>
+              <br>
+              <em> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2024 <br>
+              <a href="https://arxiv.org/abs/2403.07839">pdf</a>  / code 
+              </div>
+              <div id="mope-clip" style="display:none">
+              This paper addresses the challenge of deploying large vision-language pre-trained models on platforms with limited computational resources by introducing a new metric, Module-wise Pruning Error (MoPE), which quantifies the impact of module removal on cross-modal task performance. Utilizing the MoPE metric, we propose a unified pruning framework that applies to both pre-training and fine-tuning stages, effectively compressing vision-language models while preserving their performance capabilities.
+              </div><br>
+
               <div onmouseover="document.getElementById('vr-mcl').style.display = 'block';"
                 onmouseout="document.getElementById('vr-mcl').style.display='none';">
                 <papertitle>Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction</papertitle></a><br>
@@ -427,7 +442,7 @@ html {
                 <i>Ying Wei*</i>
               <br>
               <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024 (<newsdate>oral</newsdate>) <br>
-              <a href="https://openreview.net/pdf?id=TpD2aG1h0D">pdf</a>  / code 
+              <a href="https://openreview.net/pdf?id=TpD2aG1h0D">pdf</a>  / <a href="https://github.com/WuYichen-97/Meta-Continual-Learning-Revisited-ICLR2024/tree/main">code</a>
               </div>
               <div id="vr-mcl" style="display:none">
               This study revisits Meta-Continual Learning (Meta-CL) and for the first time bridge Meta-CL with regularization-based methods. Concretely, Meta-CL implicitly approximates Hessian in an online manner, which enjoys the benefits of timely adaptation but meantime suffers from high variance induced by random memory buffer sampling. We are thus highly motivated to combine the best of both worlds, through the proposal of Variance Reduced Meta-CL (VR-MCL) to achieve both timely and accurate Hessian approximation. 
@@ -439,7 +454,7 @@ html {
                 Zhan Zhuang, <a href="https://yuzhanghk.github.io/">Yu Zhang</a>, <i>Ying Wei*</i>
               <br>
               <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024 (<newsdate>spotlight</newsdate>) <br>
-              <a href="https://openreview.net/pdf?id=iTTZFKrlGV">pdf</a>  / code
+              <a href="https://openreview.net/pdf?id=iTTZFKrlGV">pdf</a>  / <a href="https://github.com/zwebzone/ggf">code</a>
               </div>
               <div id="ggf" style="display:none">
               To address the challenge of ineffective intermediate domains for gradual domain adaptation (GDA), this work explores gradient flow to generate intermediate domains with preserving labels, thereby enabling us a fine-tuning method for GDA. We employ the Wasserstein gradient flow in Kullback–Leibler divergence to transport samples from the source to the target domain. To simulate the dynamics, we utilize the Langevin algorithm. Since the Langevin algorithm disregards label information and introduces diffusion noise, we introduce classifier-based and sample-based potentials to avoid label switching and dramatic deviations in the sampling process. 
