@@ -342,6 +342,10 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>May 2024</newsdate>] Our paper "Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts" was accepted by ICML 2024!</li>
+        <li> [<newsdate>May 2024</newsdate>] Our paper "One Meta-tuned Transformer is What You Need for Few-shot Learning" was accepted by ICML 2024!</li>
+        <li> [<newsdate>May 2024</newsdate>] Our paper "Mitigating Catastrophic Forgetting in Online Continual Learning by Modeling Previous Task Interrelations" was accepted by ICML 2024!</li>
+        <li> [<newsdate>May 2024</newsdate>] Our paper "Federated Continual Learning via Prompt-based Dual Knowledge Transfer" was accepted by ICML 2024!</li>
         <li> [<newsdate>Apr 2024</newsdate>] Serving as an Area Chair for NeurIPS 2024</li>
         <li> [<newsdate>Feb 2024</newsdate>] Our paper "MoPE-CLIP: Structured Pruning for Efficient Vision-Language Models with Module-wise Pruning Error Metric" was accepted by CVPR 2024!</li>
         <li> [<newsdate>Jan 2024</newsdate>] Our paper "Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction" was accepted by ICLR 2024 (oral)!</li>
@@ -422,6 +426,61 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+
+              <div onmouseover="document.getElementById('smat').style.display = 'block';"
+                onmouseout="document.getElementById('smat').style.display='none';">
+                <papertitle>Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts</papertitle></a><br>
+                Shengzhuang Chen, <a href="https://jihoontack.github.io/">Jihoon Tack</a>, Yunqiao Yang, <a href="https://www.stats.ox.ac.uk/~teh/">Yee Whye Teh</a>, <a href="https://jonathan-schwarz.github.io/">Jonathan Richard Schwarz</a>,
+                <i>Ying Wei*</i>
+              <br>
+              <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
+              <a href="https://arxiv.org/pdf/2403.08477">pdf</a>  / <a href="https://github.com/szc12153/sparse_meta_tuning">code</a>
+              </div>
+              <div id="smat" style="display:none">
+              This paper addresses the so far limited success of meta-tuning on especially out-of-domain (OOD) tasks, where meta-tuning is a subsequent optimization stage for foundation models that attempts to harness the best of both parameter-efficient fine-tuning and meta-learning. The proposed approach Sparse MetA-Tuning (SMAT), trained to automatically isolate subsets of pre-trained parameters for meta-tuning on each task, successfully overcomes OOD sensitivity and delivers on the promise of enhancing the transfer abilities of vision foundation models beyond parameter-efficient fine-tuning. 
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('metaformer').style.display = 'block';"
+                onmouseout="document.getElementById('metaformer').style.display='none';">
+                <papertitle>One Meta-tuned Transformer is What You Need for Few-shot Learning</papertitle></a><br>
+                Xu Yang, <a href="https://www.huaxiuyao.io/">Huaxiu Yao</a>,  <i>Ying Wei*</i>
+              <br>
+              <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
+              pdf  / code
+              </div>
+              <div id="metaformer" style="display:none">
+              This paper introduces MetaFormer, a new meta-tuning framework exclusively based on attention. MetaFormer enhances the few-shot learning capacity of vision transformers by integrating both sample and task relationships into the model, which includes Masked Sample Attention for embedding sample relationships and Patch-grained Task Attention for encapsulating task relationships. MetaFormer demonstrates coherence and compatibility with off-the-shelf pre-trained vision transformers and shows significant improvements in both inductive and transductive few-shot learning scenarios.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('pocl').style.display = 'block';"
+                onmouseout="document.getElementById('pocl').style.display='none';">
+                <papertitle>Mitigating Catastrophic Forgetting in Online Continual Learning by Modeling Previous Task Interrelations</papertitle></a><br>
+                Yichen Wu, Hong Wang, <a href="https://peilinzhao.github.io/">Peilin Zhao</a>, <a href="https://sites.google.com/site/yefengzheng/">Yefeng Zheng</a>, <i>Ying Wei*</i>, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang*</a>
+              <br>
+              <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
+              pdf  / code
+              </div>
+              <div id="pocl" style="display:none">
+              This work reformulates replay-based continual learning methods as a unified framework, upon which we design a Pareto-Optimized CL algorithm (POCL) that leverages Pareto optimization to capture the interrelationship among previously learned tasks. POCL thus effectively enhances the overall performance of past tasks while ensuring the performance of the current task, further alleviating catastrophic forgetting.
+              </div><br>
+
+              <div onmouseover="document.getElementById('PKT-FCL').style.display = 'block';"
+                onmouseout="document.getElementById('PKT-FCL').style.display='none';">
+                <papertitle>Federated Continual Learning via Prompt-based Dual Knowledge Transfer</papertitle></a><br>
+                Hongming Piao, Yichen Wu, <a href="https://www.cs.cityu.edu.hk/~dapengwu/">Dapeng Wu</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
+              pdf  / code
+              </div>
+              <div id="PKT-FCL" style="display:none">
+              This paper introduces the Prompt-based Knowledge Transfer FCL (PKT-FCL) algorithm that prompts positive knowledge transfer across tasks and clients, which has been overlooked before in federated continual learning. PKT-FCL not only reduces communication costs but also addresses privacy concerns through a novel approach for prompt generation and aggregation, showing superior performance in comprehensive experimental evaluations.
+              </div><br>
+
+
+
+
             <div onmouseover="document.getElementById('mope-clip').style.display = 'block';"
                 onmouseout="document.getElementById('mope-clip').style.display='none';">
                 <papertitle>MoPE-CLIP: Structured Pruning for Efficient Vision-Language Models with Module-wise Pruning Error Metric</papertitle></a><br>
