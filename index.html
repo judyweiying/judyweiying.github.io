@@ -342,6 +342,10 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>July 2024</newsdate>] We are organizing the NeurIPS 2024 Workshop on Compositional Learning! For more information, please visit <a href="https://compositional-learning.github.io/">our website</a>.</li>
+        <li> [<newsdate>July 2024</newsdate>] We are organizing the NeurIPS 2024 Workshop on Advancements In Medical Foundation Models! For more information, please visit <a href="https://aim-fm-24.github.io/NeurIPS/">our website</a>.</li>
+        <li> [<newsdate>May 2024</newsdate>] Our paper "Understanding and Patching Compositional Reasoning in LLMs" was accepted by ACL 2024 Findings!</li>
+        <li> [<newsdate>May 2024</newsdate>] Our paper "Benchmarking and Improving Compositional Generalization of Multi-aspect Controllable Text Generatio" was accepted by ACL 2024!</li>
         <li> [<newsdate>May 2024</newsdate>] Honored to receive the ICLR 2024 Outstanding Honorable Mention!</li>
         <li> [<newsdate>May 2024</newsdate>] Our paper "Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts" was accepted by ICML 2024!</li>
         <li> [<newsdate>May 2024</newsdate>] Our paper "One Meta-tuned Transformer is What You Need for Few-shot Learning" was accepted by ICML 2024!</li>
@@ -361,7 +365,7 @@ html {
         <li> [<newsdate>Sep 2023</newsdate>] I joined Nanyang Technological University as a Nanyang Assistant Professor</li>
         <li> [<newsdate>July 2023</newsdate>] Our paper "Concept-wise Fine-tuning Matters in Preventing Negative Transfer" was accepted by ICCV 2023</li>
         <li> [<newsdate>Apr 2023</newsdate>] Our paper "Learning to Substitute Spans towards Improving Compositional Generalization" was accepted by ACL 2023</li>
-        <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
+  <!--       <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "Improving Task-Specific Generalization in Few-Shot Learning via Adaptive Vicinal Risk Minimization" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy" was accepted by NeurIPS 2022</li>
         <li> Serving as an area chair for MetaLearn 2022@NeurIPS 2022</li>
@@ -381,7 +385,7 @@ html {
         <li> Serving as a program committee member for NeurIPS 2021</li>
         <li> [<newsdate>May 2021</newsdate>] Our paper "Improving Generalization in Meta-learning via Task Augmentation" was accepted by ICML 2021</li>
         <li> [<newsdate>May 2021</newsdate>] Our paper "Meta-learning Hyperparameter Performance Prediction with Neural Processes" was accepted by ICML 2021</li>
-        <li> [<newsdate>Feb 2021</newsdate>] I joined City University of Hong Kong as an Assistant Professor</li>
+        <li> [<newsdate>Feb 2021</newsdate>] I joined City University of Hong Kong as an Assistant Professor</li> -->
 <!--         <li> Serving as a program committee member for ICML 2021</li>
         <li> Serving as a senior program committee member for AAAI 2021</li>
         <li> Serving as a program committee member for ICLR 2021</li>
@@ -428,6 +432,32 @@ html {
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
 
+
+              <div onmouseover="document.getElementById('creme').style.display = 'block';"
+                onmouseout="document.getElementById('creme').style.display='none';">
+                <papertitle>Understanding and Patching Compositional Reasoning in LLMs</papertitle></a><br>
+                Zhaoyi Li, Gangwei Jiang, Hong Xie, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian*</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Sixty-second Annual Meeting of the Association for Computational Linguistics (ACL) Findings</em>, 2024 <br>
+              <a href="https://arxiv.org/pdf/2402.14328v1">pdf</a>  / <a href="https://github.com/Zhaoyi-Li21/creme">code</a>
+              </div>
+              <div id="creme" style="display:none">
+              This paper is among the first to reveal that in LLMs implicit reasoning results indeed surface within middle layers and play a causative role in shaping the final explicit reasoning results. The findings support us to develop CREME,  a lightweight method to patch errors in compositional reasoning via editing the located MHSA modules. Our empirical evidence stands testament to CREME’s effectiveness, paving the way for autonomously and continuously enhancing compositional reasoning capabilities in LLMs.
+              </div><br>
+
+
+              <div onmouseover="document.getElementById('tianqi').style.display = 'block';"
+                onmouseout="document.getElementById('tianqi').style.display='none';">
+                <papertitle>Benchmarking and Improving Compositional Generalization of Multi-aspect Controllable Text Generation</papertitle></a><br>
+                <u>Tianqi Zhong</u>, <u>Zhaoyi Li</u>, Quan Wang, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>, <i>Ying Wei</i>, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>, <a href="https://faculty.ustc.edu.cn/maozhendong/en/index.htm">Zhendong Mao*</a>.
+              <br>
+              <em> Sixty-second Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2024 <br>
+              <a href="https://arxiv.org/pdf/2404.04232">pdf</a>  / <a href="https://github.com/tqzhong/CG4MCTG">code</a>
+              </div>
+              <div id="tianqi" style="display:none">
+              This paper proposes CompMCTG which serves as a benchmark encompassing diverse multi-aspect labeled datasets and a crafted three-dimensional evaluation protocol to holistically evaluate the compositional generalization of multi-aspect controllable text generation (MCTG) approaches, as well as Meta-MCTG that is a meta-learning inspired framework to mitigate the noticeable performance drop of  existing MCTG approaches in compositional generalization.
+              </div><br>
+
               <div onmouseover="document.getElementById('smat').style.display = 'block';"
                 onmouseout="document.getElementById('smat').style.display='none';">
                 <papertitle>Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts</papertitle></a><br>
@@ -448,7 +478,7 @@ html {
                 Xu Yang, <a href="https://www.huaxiuyao.io/">Huaxiu Yao</a>,  <i>Ying Wei*</i>
               <br>
               <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
-              pdf  / code
+              <a href="https://openreview.net/pdf/06e74355729cbbba05e5627f2be61d331e35a2cb.pdf">pdf</a>  / <a href="https://github.com/xyang583/metaformer">code</a>
               </div>
               <div id="metaformer" style="display:none">
               This paper introduces MetaFormer, a new meta-tuning framework exclusively based on attention. MetaFormer enhances the few-shot learning capacity of vision transformers by integrating both sample and task relationships into the model, which includes Masked Sample Attention for embedding sample relationships and Patch-grained Task Attention for encapsulating task relationships. MetaFormer demonstrates coherence and compatibility with off-the-shelf pre-trained vision transformers and shows significant improvements in both inductive and transductive few-shot learning scenarios.
@@ -461,7 +491,7 @@ html {
                 Yichen Wu, Hong Wang, <a href="https://peilinzhao.github.io/">Peilin Zhao</a>, <a href="https://sites.google.com/site/yefengzheng/">Yefeng Zheng</a>, <i>Ying Wei*</i>, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang*</a>
               <br>
               <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
-              pdf  / code
+              <a href="https://openreview.net/attachment?id=olbTrkWo1D&name=pdf">pdf</a> / code
               </div>
               <div id="pocl" style="display:none">
               This work reformulates replay-based continual learning methods as a unified framework, upon which we design a Pareto-Optimized CL algorithm (POCL) that leverages Pareto optimization to capture the interrelationship among previously learned tasks. POCL thus effectively enhances the overall performance of past tasks while ensuring the performance of the current task, further alleviating catastrophic forgetting.
@@ -473,7 +503,7 @@ html {
                 Hongming Piao, Yichen Wu, <a href="https://www.cs.cityu.edu.hk/~dapengwu/">Dapeng Wu</a>, <i>Ying Wei*</i>
               <br>
               <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
-              pdf  / code
+              <a href="https://openreview.net/pdf?id=Kqa5JakTjB">pdf</a>  / <a href="https://github.com/piaohongming/Powder">code</a>
               </div>
               <div id="PKT-FCL" style="display:none">
               This paper introduces the Prompt-based Knowledge Transfer FCL (PKT-FCL) algorithm that prompts positive knowledge transfer across tasks and clients, which has been overlooked before in federated continual learning. PKT-FCL not only reduces communication costs but also addresses privacy concerns through a novel approach for prompt generation and aggregation, showing superior performance in comprehensive experimental evaluations.
