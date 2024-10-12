@@ -204,7 +204,7 @@
 
 /* Leading rule */
 html {
-  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+  -webkit-filter: brightness(110%) contrast(90%) grayscale(0%) sepia(10%) !important;
 }
 
 /* Text contrast */
@@ -288,16 +288,17 @@ html {
             <td style="padding:2.5%;width:63%;vertical-align:middle">
         <p align="center">
         <name>Ying WEI (魏 颖)</name><br>
-        ying.wei [at] ntu [dot] edu [dot] sg
+        ying.wei [at] edu [dot] edu [dot] cn
         </p>
-        <p>I am currently a <a href="https://www.ntu.edu.sg/research/research-careers/nanyang-assistant-professorship-(nap)#Content_C003_Col00">Nanyang Assistant Professor</a> with <a href="https://www.cs.cityu.edu.hk/">School of Computer Science and Engineering, Nanyang Technological University</a>.
+        <p>I am currently a ZJU-100 Young Professor with <a href="http://www.en.cs.zju.edu.cn/">College of Computer Science and Technology, Zhejiang University</a>.
+
         </p>
         <p style="text-align: justify;">
         I am generally interested in developing algorithms that equip machines with more general intelligence via knowledge transfer and compositionality.
-        This includes allowing continuous transfer and adaptation of the knowledge previous learned (nowadays in LLMs) to quickly learn the current task with minimal human supervision, and autonomously evaluating the success of knowledge transfer. I am also passionate about applying these algorithms into real-world applications with small data, e.g., drug discovery.
+        This includes allowing continuous transfer and adaptation of the knowledge previous learned (nowadays in LLMs) to quickly learn the current task with minimal human supervision, and autonomously evaluating the success of knowledge transfer. I am also passionate about applying these algorithms into real-world applications with small data, e.g., AI for Science.
         </p>
         <p style="text-align: justify;">
-        Previously, I was an Assistant Professor at <a href="https://www.cs.cityu.edu.hk/">Department of Computer Science, City University of Hong Kong</a> and 
+        Previously, I was a <a href="https://www.ntu.edu.sg/research/research-careers/nanyang-assistant-professorship-(nap)#Content_C003_Col00">Nanyang Assistant Professor</a> with <a href="https://www.ntu.edu.sg/computing/">College of Computing and Data Science, Nanyang Technological University</a>, an Assistant Professor at <a href="https://www.cs.cityu.edu.hk/">Department of Computer Science, City University of Hong Kong</a> and 
         a senior researcher at <a href="https://ai.tencent.com/ailab/zh/index">Tencent AI Lab</a>. I completed my Ph.D. in Computer Science and Engineering at <a href="https://www.ust.hk/home/">Hong Kong University of Science and Technology</a> under the supervision of Professor <a href="http://www.cs.ust.hk/~qyang/">Qiang Yang</a>, and my B.S. in Automation at <a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a>. I have also spent time interning at <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
         </p>
 
@@ -318,8 +319,8 @@ html {
 <a href="https://scholar.google.com/citations?hl=en&user=5UpFdKsAAAAJ">Google Scholar</a> 
         </p>
         </td>
-        <td width="30%">
-        <img src="images/Ying_circle_2.png">
+        <td width="40%">
+        <img src="images/Ying_circle_3.png" width="100%">
         </td>
       </tr>
   </tbody></table>
@@ -342,6 +343,12 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Time-Varying LoRA: Towards Effective Cross-Domain Fine-Tuning of Diffusion Models" was accepted by NeurIPS 2024!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Learning Where to Edit Vision Transformers" was accepted by NeurIPS 2024!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Mixture of Adversarial LoRAs: Boosting Robust Generalization in Meta-tuning" was accepted by NeurIPS 2024!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Mitigating the Language Mismatch and Repetition Issues in LLM-based Machine Translation via Model Editing" was accepted by EMNLP 2024!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Serving as an Area Chair for ICLR 2025</li>
         <li> [<newsdate>July 2024</newsdate>] We are organizing the NeurIPS 2024 Workshop on Compositional Learning! For more information, please visit <a href="https://compositional-learning.github.io/">our website</a>.</li>
         <li> [<newsdate>July 2024</newsdate>] We are organizing the NeurIPS 2024 Workshop on Advancements In Medical Foundation Models! For more information, please visit <a href="https://aim-fm-24.github.io/NeurIPS/">our website</a>.</li>
         <li> [<newsdate>May 2024</newsdate>] Our paper "Understanding and Patching Compositional Reasoning in LLMs" was accepted by ACL 2024 Findings!</li>
@@ -431,8 +438,68 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+              <div onmouseover="document.getElementById('terra').style.display = 'block';"
+                onmouseout="document.getElementById('terra').style.display='none';">
+                <papertitle>Time-Varying LoRA: Towards Effective Cross-Domain Fine-Tuning of Diffusion Models</papertitle></a><br>
+                <u>Zhan Zhuang</u>, <u>Yulong Zhang</u>, Xuehao Wang, Jiangang Lu, <i>Ying Wei*</i>, <a href="https://yuzhanghk.github.io/">Yu Zhang*</a>
+              <br>
+              <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
+              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              </div>
+              <div id="terra" style="display:none">
+              This paper introduces Terra, a novel <newsdate>T</newsdate>im<newsdate>e</newsdate>-va<newsdate>r</newsdate>ying low-<newsdate>r</newsdate>ank <newsdate>a</newsdate>dapter that offers a fine-tuning framework for domain flow generation. Terra constructs a continuous parameter manifold via a time variable, with its expressive power theoretically analyzed. This domain flow generation framework flexibly supports both unsupervised domain adaptation and domain generalization, achieving state-of-the-art performance by generating interpolated domains with varying styles to bridge the gap between source and target domains.
+              </div><br>
+
+              <div onmouseover="document.getElementById('l2e').style.display = 'block';"
+                onmouseout="document.getElementById('l2e').style.display='none';">
+                <papertitle>Learning Where to Edit Vision Transformers</papertitle></a><br>
+                Yunqiao Yang, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang*</a>, Shengzhuang Chen, <a href="https://kedema.org/">Kede Ma</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
+              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              </div>
+              <div id="l2e" style="display:none">
+              This work addresses the gap in model editing for vision models by (1) curating two benchmarks that existing pre-trained ViTs struggle to predict correctly, and (2) correcting the predictive errors of ViTs, particularly those arising from subpopulation shifts. We propose a learning-to-learn approach that identifies a small set of critical parameters for editing in response to erroneous samples, with the locations of these parameters determined by a hypernetwork. By simulating the edit process and explicitly optimizing for edit success, the hypernetwork is trained to output <newsdate>reliable and generalizable</newsdate> editing locations. Additionally, the sparsity constraint imposed on the hypernetwork ensures that edits are <newsdate>localized</newsdate>, without distorting irrelevant parameters.
+              </div><br>
+
+              <div onmouseover="document.getElementById('duquant').style.display = 'block';"
+                onmouseout="document.getElementById('duquant').style.display='none';">
+                <papertitle>DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs</papertitle></a><br>
+                <u>Haokun Lin</u>, <u>Haobo Xu</u>, <u>Yichen Wu</u>, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>,  <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun*</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
+              <a href="https://arxiv.org/pdf/2406.01721">pdf</a>  / <a href="https://github.com/tqzhong/CG4MCTG">code</a> (<newsdate>oral</newsdate>)
+              </div>
+              <div id="duquant" style="display:none">
+              This work tackles Massive Outliers (outlier activations) in LLMs that lead to significant performance degradation in low-bit quantization. We introduce DuQuant, a novel approach that utilizes rotation and permutation transformations to more effectively mitigate massive outliers besides normal ones. DuQuant outperforms the state-of-the-art baselines across various sizes and types of LLMs on multiple tasks, even with 4-bit weight-activation quantization.
+              </div><br>
 
 
+              <div onmouseover="document.getElementById('amt').style.display = 'block';"
+                onmouseout="document.getElementById('amt').style.display='none';">
+                <papertitle>Mixture of Adversarial LoRAs: Boosting Robust Generalization in Meta-tuning</papertitle></a><br>
+                Xu Yang, <a href="https://liuchen1993.cn/HomePage/index.html">Chen Liu</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
+              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              </div>
+              <div id="amt" style="display:none">
+              This work introduces AMT, an <newsdate>A</newsdate>dversarial <newsdate>M</newsdate>eta-<newsdate>T</newsdate>uning methodology designed to enhance the robust generalization of pre-trained models for out-of-domain (OOD) few-shot learning. The core innovation of AMT is a robust LoRAPool, which consists of LoRAs meta-tuned with dual perturbations on both inputs and singular values/vectors across varying robustness levels. Extensive evaluations demonstrate that AMT significantly outperforms previous state-of-the-art methods across a range of OOD few-shot image classification tasks.
+              </div><br>
+
+              <div onmouseover="document.getElementById('trans_editing').style.display = 'block';"
+                onmouseout="document.getElementById('trans_editing').style.display='none';">
+                <papertitle>Mitigating the Language Mismatch and Repetition Issues in LLM-based Machine Translation via Model Editing</papertitle></a><br>
+                <u>Weichuan Wang</u>, <u>Zhaoyi Li</u>, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>, <a href="https://allenjack.github.io/">Chen Ma</a>, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song*</a>, <i>Ying Wei*</i> 
+              <br>
+              <em> The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2024 <br>
+              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              </div>
+              <div id="trans_editing" style="display:none">
+              This work targets two major translation errors encountered by current LLMs — language mismatch and repetition — through model editing methods. We find that direct application of localization-based edits either yields limited impact or negatively affects general translation quality. To address this, we refine the identified components by intersecting localization results across languages, filtering out irrelevant information. Experiments show our approach effectively reduces these errors while preserving or improving overall translation quality.
+              </div><br>
+
+             
               <div onmouseover="document.getElementById('creme').style.display = 'block';"
                 onmouseout="document.getElementById('creme').style.display='none';">
                 <papertitle>Understanding and Patching Compositional Reasoning in LLMs</papertitle></a><br>
@@ -478,7 +545,7 @@ html {
                 Xu Yang, <a href="https://www.huaxiuyao.io/">Huaxiu Yao</a>,  <i>Ying Wei*</i>
               <br>
               <em> Forty-first International Conference on Machine Learning (ICML)</em>, 2024 <br>
-              <a href="https://openreview.net/pdf/06e74355729cbbba05e5627f2be61d331e35a2cb.pdf">pdf</a>  / <a href="https://github.com/xyang583/metaformer">code</a>
+              <a href="https://openreview.net/pdf/06e74355729cbbba05e5627f2be61d331e35a2cb.pdf">pdf</a>  / <a href="https://github.com/xyang583/metaformer">code</a> (<newsdate>spotlight</newsdate>)
               </div>
               <div id="metaformer" style="display:none">
               This paper introduces MetaFormer, a new meta-tuning framework exclusively based on attention. MetaFormer enhances the few-shot learning capacity of vision transformers by integrating both sample and task relationships into the model, which includes Masked Sample Attention for embedding sample relationships and Patch-grained Task Attention for encapsulating task relationships. MetaFormer demonstrates coherence and compatibility with off-the-shelf pre-trained vision transformers and shows significant improvements in both inductive and transductive few-shot learning scenarios.
@@ -541,7 +608,7 @@ html {
               <div onmouseover="document.getElementById('ggf').style.display = 'block';"
                 onmouseout="document.getElementById('ggf').style.display='none';">
                 <papertitle>Gradual Domain Adaptation via Gradient Flow</papertitle></a><br>
-                Zhan Zhuang, <a href="https://yuzhanghk.github.io/">Yu Zhang</a>, <i>Ying Wei*</i>
+                Zhan Zhuang, <a href="https://yuzhanghk.github.io/">Yu Zhang*</a>, <i>Ying Wei*</i>
               <br>
               <em>Twelfth International Conference on Learning Representations (ICLR)</em>, 2024 (<newsdate>spotlight</newsdate>) <br>
               <a href="https://openreview.net/pdf?id=iTTZFKrlGV">pdf</a>  / <a href="https://github.com/zwebzone/ggf">code</a>
