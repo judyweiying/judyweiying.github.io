@@ -343,6 +343,11 @@ html {
       <div style="overflow-y: scroll; padding-right: 1px; height:165px;">
       <ul>
         <!--<h3 id="2019">2019</h3>-->
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts" was accepted by ACL 2025!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Come Together, But Not Right Now: A Progressive Strategy to Boost Low-Rank Adaptation" was accepted by ICML 2025!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning" was accepted by ICLR 2025!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "SD-LoRA: Scalable Decoupled Low-Rank Adaptation for Class Incremental Learning" was accepted by ICLR 2025!</li>
+        <li> [<newsdate>Sep 2024</newsdate>] Our paper "CLDyB: Towards Dynamic Benchmarking for Continual Learning with Pre-trained Models" was accepted by ICLR 2025!</li>
         <li> [<newsdate>Sep 2024</newsdate>] Our paper "Time-Varying LoRA: Towards Effective Cross-Domain Fine-Tuning of Diffusion Models" was accepted by NeurIPS 2024!</li>
         <li> [<newsdate>Sep 2024</newsdate>] Our paper "Learning Where to Edit Vision Transformers" was accepted by NeurIPS 2024!</li>
         <li> [<newsdate>Sep 2024</newsdate>] Our paper "Mixture of Adversarial LoRAs: Boosting Robust Generalization in Meta-tuning" was accepted by NeurIPS 2024!</li>
@@ -365,13 +370,13 @@ html {
         <li> [<newsdate>Jan 2024</newsdate>] Our paper "Active Retrosynthetic Planning Aware of Route Quality" was accepted by ICLR 2024!</li>
         <li> [<newsdate>Jan 2024</newsdate>] Serving as an Area Chair for ICML 2024</li>
         <li> [<newsdate>Jan 2024</newsdate>] Serving as an Action Editor for Transactions on Machine Learning Research (TMLR)</li>
-        <li> [<newsdate>Jan 2024</newsdate>] Our paper "RetroOOD: Understanding Out-of-Distribution Generalization in Retrosynthesis Prediction" was accepted by AAAI 2024!</li>
+        <!-- <li> [<newsdate>Jan 2024</newsdate>] Our paper "RetroOOD: Understanding Out-of-Distribution Generalization in Retrosynthesis Prediction" was accepted by AAAI 2024!</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Towards Anytime Fine-tuning: Continually Pre-trained Language Models with Hypernetwork Prompts" was accepted by EMNLP 2023</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Secure Out-of-Distribution Task Generalization with Energy-Based Models" was accepted by NeurIPS 2023</li>
         <li> [<newsdate>Sep 2023</newsdate>] Our paper "Does Continual Learning Meet Compositionality? New Benchmarks and An Evaluation Framework" was accepted by NeurIPS 2023</li>
         <li> [<newsdate>Sep 2023</newsdate>] I joined Nanyang Technological University as a Nanyang Assistant Professor</li>
         <li> [<newsdate>July 2023</newsdate>] Our paper "Concept-wise Fine-tuning Matters in Preventing Negative Transfer" was accepted by ICCV 2023</li>
-        <li> [<newsdate>Apr 2023</newsdate>] Our paper "Learning to Substitute Spans towards Improving Compositional Generalization" was accepted by ACL 2023</li>
+        <li> [<newsdate>Apr 2023</newsdate>] Our paper "Learning to Substitute Spans towards Improving Compositional Generalization" was accepted by ACL 2023</li> -->
   <!--       <li> [<newsdate>Sep 2022</newsdate>] Our paper "Adversarial Task Up-sampling for Meta-learning" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "Improving Task-Specific Generalization in Few-Shot Learning via Adaptive Vicinal Risk Minimization" was accepted by NeurIPS 2022</li>
         <li> [<newsdate>Sep 2022</newsdate>] Our paper "GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy" was accepted by NeurIPS 2022</li>
@@ -438,13 +443,91 @@ html {
 
             <br><br>
             ( <u>___</u>: equal contribution, *:  corresponding author) <br><br>
+             <div onmouseover="document.getElementById('simoe').style.display = 'block';"
+                onmouseout="document.getElementById('simoe').style.display='none';">
+                <papertitle>Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts</papertitle></a><br>
+                Shengzhuang Chen, <i>Ying Wei*</i>, <a href="https://jonathan-schwarz.github.io/">Jonathan Richard Schwarz</a>*
+              <br>
+              <em> Sixty-third Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025 <br>
+              <a href="https://arxiv.org/pdf/2506.12597">pdf</a>  / <a href="https://szc12153.github.io/sparse_meta_tuning/">code</a> (<newsdate>oral</newsdate>)</div>
+              <div id="simoe" style="display:none">
+              Existing dense LLMs lack efficient mechanisms for specializing across multiple domains without excessive computational overhead. This work proposes <newsdate>SIMoE</newsdate>, an end-to-end method that fine-tunes dense LLMs into sparse, domain-specialized MOEs. SIMoE identifies structurally sparse domain-specific experts and learns a router network for input-dependent expert merging. This achieves superior generalization and state-of-the-art instruction-tuning performance while maintaining optimal computational efficiency.
+              </div><br>
+
+
+            <div onmouseover="document.getElementById('coto').style.display = 'block';"
+                onmouseout="document.getElementById('coto').style.display='none';">
+                <papertitle>Come Together, But Not Right Now: A Progressive Strategy to Boost Low-Rank Adaptation</papertitle></a><br>
+                Zhan Zhuang, Xiequn Wang, Wei Li, Yulong Zhang, Qiushi Huang, Shuhao Chen, Xuehao Wang, Yanbin Wei, Yuhe Nie, <a href="https://kedema.org/">Kede Ma</a>, <a href="https://yuzhanghk.github.io/">Yu Zhang*</a>, <i>Ying Wei*</i>
+              <br>
+              <em> Forty-second International Conference on Machine Learning (ICML)</em>, 2025 <br>
+              <a href="https://openreview.net/pdf?id=Zha2m39ZoM">pdf</a>  / <a href="https://github.com/zwebzone/coto">code</a></div>
+              <div id="coto" style="display:none">
+              Current LoRA fine-tuning often traps LoRAs near suboptimal initializations, limiting model generalization and downstream adapter manipulation (merging/pruning). This work introduces <newsdate>CoTo</newsdate>, progressively increasing LoRA activation during training. This stochastic method promotes better optimization, stability, and exploration. Theoretically, CoTo supports dropout stability and linear mode connectivity, measuring LoRAs' contributions through cooperative-game analysis. Experiments show CoTo improves performance, merging accuracy, pruning robustness, and training efficiency, compatible across diverse LoRA methods.
+              </div><br>
+
+              <div onmouseover="document.getElementById('reactgraph').style.display = 'block';"
+                onmouseout="document.getElementById('reactgraph').style.display='none';">
+                <papertitle>Reaction Graph: Towards Reaction-Level Modeling for Chemical Reactions with 3D Structures</papertitle></a><br>
+                Yingzhao Jian, Yue Zhang, <i>Ying Wei</i>, <a href="https://hehefan.github.io/">Hehe Fan</a>, <a href="https://person.zju.edu.cn/yiyang">Yi Yang</a>
+              <br>
+              <em> Forty-second International Conference on Machine Learning (ICML)</em>, 2025 <br>
+              <a href="https://openreview.net/pdf?id=V6fBMFduGS">pdf</a>  / <a href="https://github.com/Shadow-Dream/Reaction-Graph">code</a></div>
+              <div id="reactgraph" style="display:none">
+              Current AI approaches excel in single-molecule property predictions but largely overlook modeling intermolecular interactions, especially chemical reactions. This paper introduces <newsdate>Reaction Graph (RG)</newsdate>, a unified representation capturing both reactants and products' molecular structures and interatomic relationships in chemical reactions, explicitly incorporating 3D molecular information. RG significantly improves performance on reaction classification, condition prediction, and yield prediction tasks, achieving state-of-the-art accuracy across multiple datasets.
+              </div><br>
+
+
+
+            <div onmouseover="document.getElementById('fv-cl').style.display = 'block';"
+                onmouseout="document.getElementById('fv-cl').style.display='none';">
+                <papertitle>Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning</papertitle></a><br>
+                Gangwei Jiang, Caigao Jiang, Zhaoyi Li, Siqiao Xue, Jun Zhou, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>*, <i>Ying Wei*</i>
+              <br>
+              <em> Thirteenth International Conference on Learning Representations (ICLR)</em>, 2025 <br>
+              <a href="https://openreview.net/pdf?id=gc8QAQfXv6">pdf</a>  / <a href="https://github.com/GangweiJiang/FvForgetting.git">code</a> (<newsdate>oral</newsdate>)
+              </div>
+              <div id="fv-cl" style="display:none">
+              Current studies on catastrophic forgetting in LLMs mainly analyze a single training sequence and overlook how different tasks and model architectures influence forgetting, lacking a deeper understanding of underlying mechanisms. This work introduces function vectors (FVs) to interpret and quantify forgetting in LLMs, revealing that CF stems from biased function activation rather than task overwriting. Based on this insight, the authors propose an FV-guided training method with regularization to stabilize FVs and reduce forgetting. The approach is theoretically grounded and empirically validated across four benchmarks.
+              </div><br>
+
+
+            <div onmouseover="document.getElementById('sd-lora').style.display = 'block';"
+                onmouseout="document.getElementById('sd-lora').style.display='none';">
+                <papertitle>SD-LoRA: Scalable Decoupled Low-Rank Adaptation for Class Incremental Learning</papertitle></a><br>
+                <u>Yichen Wu</u>, <u>Hongming Piao</u>, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>, Renzhen Wang, <a href="https://seas.harvard.edu/person/hanspeter-pfister">Hanspeter Pfister</a>, <a href="https://gr.xjtu.edu.cn/web/dymeng">Deyu Meng</a>, <a href="https://kedema.org/">Kede Ma</a>*, <i>Ying Wei*</i>
+              <br>
+              <em> Thirteenth International Conference on Learning Representations (ICLR)</em>, 2025 <br>
+              <a href="https://openreview.net/pdf?id=5U1rlpX68A">pdf</a>  / <a href="https://github.com/WuYichen-97/SD-Lora-CL">code</a> (<newsdate>oral</newsdate>)
+              </div>
+              <div id="sd-lora" style="display:none">
+              The paper tackles the scalability limitations of existing continual learning methods with foundation models—specifically, the need to expand prompt/LoRA pools or store task data, which becomes inefficient as the number of tasks increases. The paper introduces <newsdate>SD-LoRA</newsdate>, a scalable continual learning method that avoids storing past data or expanding model components. It separates how LoRA learns direction and magnitude to improve stability and flexibility. The method supports efficient end-to-end training and inference, and performs strongly across multiple benchmarks and foundation models.
+              </div><br>
+
+
+            <div onmouseover="document.getElementById('clydb').style.display = 'block';"
+                onmouseout="document.getElementById('clydb').style.display='none';">
+                <papertitle>CLDyB: Towards Dynamic Benchmarking for Continual Learning with Pre-trained Models</papertitle></a><br>
+                Shengzhuang Chen, Yikai Liao, Xiaoxiao Sun, <a href="https://kedema.org/">Kede Ma</a>*, <i>Ying Wei*</i>
+              <br>
+              <em> Thirteenth International Conference on Learning Representations (ICLR)</em>, 2025 <br>
+              <a href="https://openreview.net/pdf?id=RnxwxGXxex">pdf</a>  / <a href="https://github.com/szc12153/CLDyB">code</a>
+              </div>
+              <div id="clydb" style="display:none">
+              The paper addresses two key issues in continual learning with foundation models: data contamination risks in large-scale pre-training datasets, and the static, overly simplistic nature of standard benchmarks that fail to reflect real-world complexities, leading to poor robustness and overfitting. It introduces <newsdate>CLDyB</newsdate>, a dynamic benchmarking framework that generates challenging task sequences via tree-search to better evaluate continual learning methods. CLDyB identifies performance gaps in current methods, offers insight into their strengths and weaknesses, and provides the community with reusable, high-difficulty benchmarks for more robust CL evaluation.
+              </div><br>
+
+
+
+
+
               <div onmouseover="document.getElementById('terra').style.display = 'block';"
                 onmouseout="document.getElementById('terra').style.display='none';">
                 <papertitle>Time-Varying LoRA: Towards Effective Cross-Domain Fine-Tuning of Diffusion Models</papertitle></a><br>
                 <u>Zhan Zhuang</u>, <u>Yulong Zhang</u>, Xuehao Wang, Jiangang Lu, <i>Ying Wei*</i>, <a href="https://yuzhanghk.github.io/">Yu Zhang*</a>
               <br>
               <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
-              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              <a href="https://openreview.net/pdf?id=SgODU2mx9T">pdf</a>  / <a href="https://github.com/zwebzone/terra">code</a>
               </div>
               <div id="terra" style="display:none">
               This paper introduces Terra, a novel <newsdate>T</newsdate>im<newsdate>e</newsdate>-va<newsdate>r</newsdate>ying low-<newsdate>r</newsdate>ank <newsdate>a</newsdate>dapter that offers a fine-tuning framework for domain flow generation. Terra constructs a continuous parameter manifold via a time variable, with its expressive power theoretically analyzed. This domain flow generation framework flexibly supports both unsupervised domain adaptation and domain generalization, achieving state-of-the-art performance by generating interpolated domains with varying styles to bridge the gap between source and target domains.
@@ -456,7 +539,7 @@ html {
                 Yunqiao Yang, <a href="https://sites.google.com/site/longkaihugo/home">Long-Kai Huang</a>, Shengzhuang Chen, <a href="https://kedema.org/">Kede Ma</a>, <i>Ying Wei*</i>
               <br>
               <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
-              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+               <a href="https://arxiv.org/abs/2411.01948">pdf</a>  / <a href="https://github.com/hustyyq/Where-to-Edit">code</a>
               </div>
               <div id="l2e" style="display:none">
               This work addresses the gap in model editing for vision models by (1) curating two benchmarks that existing pre-trained ViTs struggle to predict correctly, and (2) correcting the predictive errors of ViTs, particularly those arising from subpopulation shifts. We propose a learning-to-learn approach that identifies a small set of critical parameters for editing in response to erroneous samples, with the locations of these parameters determined by a hypernetwork. By simulating the edit process and explicitly optimizing for edit success, the hypernetwork is trained to output <newsdate>reliable and generalizable</newsdate> editing locations. Additionally, the sparsity constraint imposed on the hypernetwork ensures that edits are <newsdate>localized</newsdate>, without distorting irrelevant parameters.
@@ -468,7 +551,7 @@ html {
                 <u>Haokun Lin</u>, <u>Haobo Xu</u>, <u>Yichen Wu</u>, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song</a>,  <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun*</a>, <i>Ying Wei*</i>
               <br>
               <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
-              <a href="https://arxiv.org/pdf/2406.01721">pdf</a>  / <a href="https://github.com/tqzhong/CG4MCTG">code</a> (<newsdate>oral</newsdate>)
+              <a href="https://arxiv.org/pdf/2406.01721">pdf</a>  / <a href="https://github.com/Hsu1023/DuQuant">code</a> (<newsdate>oral</newsdate>)
               </div>
               <div id="duquant" style="display:none">
               This work tackles Massive Outliers (outlier activations) in LLMs that lead to significant performance degradation in low-bit quantization. We introduce DuQuant, a novel approach that utilizes rotation and permutation transformations to more effectively mitigate massive outliers besides normal ones. DuQuant outperforms the state-of-the-art baselines across various sizes and types of LLMs on multiple tasks, even with 4-bit weight-activation quantization.
@@ -481,7 +564,7 @@ html {
                 Xu Yang, <a href="https://liuchen1993.cn/HomePage/index.html">Chen Liu</a>, <i>Ying Wei*</i>
               <br>
               <em> Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 <br>
-              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d085b2d2d6dee1dd596bc3b8ecd5aaa6-Paper-Conference.pdf">pdf</a>   / <a href="https://github.com/xyang583/AMT">code</a>
               </div>
               <div id="amt" style="display:none">
               This work introduces AMT, an <newsdate>A</newsdate>dversarial <newsdate>M</newsdate>eta-<newsdate>T</newsdate>uning methodology designed to enhance the robust generalization of pre-trained models for out-of-domain (OOD) few-shot learning. The core innovation of AMT is a robust LoRAPool, which consists of LoRAs meta-tuned with dual perturbations on both inputs and singular values/vectors across varying robustness levels. Extensive evaluations demonstrate that AMT significantly outperforms previous state-of-the-art methods across a range of OOD few-shot image classification tasks.
@@ -493,7 +576,7 @@ html {
                 <u>Weichuan Wang</u>, <u>Zhaoyi Li</u>, <a href="http://staff.ustc.edu.cn/~liandefu/">Defu Lian</a>, <a href="https://allenjack.github.io/">Chen Ma</a>, <a href="https://sites.google.com/site/aisquaredlab/">Linqi Song*</a>, <i>Ying Wei*</i> 
               <br>
               <em> The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2024 <br>
-              pdf  / code <img src="images/coming.png" width="2.8%" ><i>coming soon</i>
+              <a href="https://aclanthology.org/2024.emnlp-main.879.pdf">pdf</a> h
               </div>
               <div id="trans_editing" style="display:none">
               This work targets two major translation errors encountered by current LLMs — language mismatch and repetition — through model editing methods. We find that direct application of localization-based edits either yields limited impact or negatively affects general translation quality. To address this, we refine the identified components by intersecting localization results across languages, filtering out irrelevant information. Experiments show our approach effectively reduces these errors while preserving or improving overall translation quality.
