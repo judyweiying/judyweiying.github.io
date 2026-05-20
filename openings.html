@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Openings | CompLife Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page-local overrides so each row fills evenly */
+    .opening-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .value-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    .value-grid .card p { text-align: left; hyphens: none; word-spacing: normal; }
+    @media (max-width: 1100px) {
+      .value-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 820px) {
+      .opening-grid { grid-template-columns: 1fr; }
+      .value-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .value-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CompLife Lab home">
+        <div class="brand-main"><span class="accent">Comp</span>ositional <span class="accent">Life</span>long Learning <span class="accent">Lab</span></div>
+        <div class="brand-sub">CompLife Lab</div>
+      </a>
+      <nav class="nav"><a class="" href="index.html">Home</a><a class="" href="research.html">Research</a><a class="" href="team.html">Team</a><a class="" href="publications.html">Publications</a><a class="active" href="openings.html">Openings</a></nav>
+    </div>
+  </header>
+  <main class="page">
+
+<div class="container">
+  <section>
+    <span class="section-badge">Openings</span>
+    <h1 class="section-title" style="margin-top:18px;">Join CompLife Lab</h1>
+    <p class="section-intro">If you are interested in joining us, please fill out the form below that fits you. No need to email first; we read every submission.</p>
+
+    <div class="opening-grid">
+      <article class="card">
+        <h3>PhD/Master students</h3>
+        <p>For prospective PhD/Master students interested in joining the lab.</p>
+        <p><a href="https://docs.qq.com/form/page/DYmF0Y3JmUWtYTkFZ" target="_blank" rel="noopener">Apply &rarr;</a></p>
+      </article>
+      <article class="card">
+        <h3>Postdoctoral researchers</h3>
+        <p>For researchers who have completed (or are about to complete) a PhD.</p>
+        <p><a href="https://docs.qq.com/form/page/DYkNhSkJmWkRwcERJ" target="_blank" rel="noopener">Apply &rarr;</a></p>
+      </article>
+      <article class="card">
+        <h3>Undergraduate RAs</h3>
+        <p>For undergraduates seeking research experience in the lab.</p>
+        <p><a href="https://docs.qq.com/form/page/DYkNTYmd3UWFCaHJL" target="_blank" rel="noopener">Apply &rarr;</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="people-section-title">What we value</h2>
+    <div class="value-grid">
+      <article class="card"><h4>Curiosity</h4><p>The kind that makes you read the Wikipedia page on how dragonfly compound eyes track prey at 1 a.m., for no reason.</p></article>
+      <article class="card"><h4>Rigor</h4><p>When an experiment looks too good, is your first instinct to celebrate, or to look for the bug?</p></article>
+      <article class="card"><h4>Communication</h4><p>The best ideas in this lab usually start as someone interrupting a meeting to say "wait, I'm confused."</p></article>
+      <article class="card"><h4>Ownership</h4><p>This is your project, not your supervisor's homework. Push back when you disagree.</p></article>
+      <article class="card"><h4>Patience</h4><p>Most problems we work on don't yield in a week. You will be stuck, but we are together to figure out. </p></article>
+    </div> 
+  </section>
+</div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Copyright @ Complife Lab</div>
+  </footer>
+</body>
+</html>

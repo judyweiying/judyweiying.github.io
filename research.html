@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | CompLife Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CompLife Lab home">
+        <div class="brand-main"><span class="accent">Comp</span>ositional <span class="accent">Life</span>long Learning <span class="accent">Lab</span></div>
+        <div class="brand-sub">CompLife Lab</div>
+      </a>
+      <nav class="nav"><a class="" href="index.html">Home</a><a class="active" href="research.html">Research</a><a class="" href="team.html">Team</a><a class="" href="publications.html">Publications</a><a class="" href="openings.html">Openings</a></nav>
+    </div>
+  </header>
+  <main class="page">
+    
+<div class="container">
+  <section>
+    <span class="section-badge">Research</span>
+    <h1 class="section-title" style="margin-top:18px;">Current Projects</h1>
+    <!-- <p class="section-intro">CompLife Lab studies how machine learning systems can acquire knowledge modularly, adapt continuously, and transfer effectively across tasks, domains, and scientific problem settings.</p> -->
+    <div class="research-figure">
+      <img src="images/Research_Roadmap.svg" alt="Research overview placeholder">
+    </div>
+    <div class="theme-grid">
+      <article class="card">
+        <h3>Understanding & building compositionality</h3>
+        <p>We study whether and how foundation models can identify compositional components across three levels: concepts, reasoning patterns, and parameter modules. Our goal is to make model capabilities more interpretable, diagnosable, and reusable, so that complex abilities can be later built by composing well-defined components.</p>
+        <ul class="feature-list">
+          <li><strong>Concepts:</strong> extracting reusable multimodal semantic components from tokens, pixels, and latent representations. Related: <a href="https://openreview.net/pdf?id=utRSxIkoSJ" rel="noopener">Concept-Guided Tokenization</a>; <a href="https://openreview.net/forum?id=22hBwIf7OC" target="_blank" rel="noopener">Plug-and-Play Compositionality</a>; <a href="https://huggingface.co/spaces/liaoweiduo/SAE-explorer">Visualization of Multimodal Concepts</a>.</li>
+          <li><strong>Reasoning patterns:</strong> decomposing long-chain and multi-hop reasoning into structural sub-patterns. Related: <a href="https://arxiv.org/abs/2505.22148" target="_blank" rel="noopener">LCoT2Tree / What Makes a Good Reasoning Chain?</a>; <a href="https://arxiv.org/abs/2604.01702" target="_blank" rel="noopener">Reasoning Pattern Discrepancy in Long-CoT SFT</a>.</li>
+          <li><strong>Parameter modules:</strong> discovering sparse experts  and dynamic modular routing inside foundation models. Related: <a href="https://aclanthology.org/2025.acl-long.816.pdf" target="_blank" rel="noopener">Automatic Expert Discovery in LLM Upcycling</a>.</li>  
+          <li><strong>Skills</strong>: ongoing</li>     
+      </ul>
+      </article>
+      <article class="card">
+        <h3>Lifelong learning through compositionality</h3>
+        <p>We study how foundation models and agents can evolve continuously by localizing compositional components to delete, add, consolidate, or correct. Our key idea is to use compositional components (such as concepts, reasoning patterns, modules and skills) as anchors for precise capability gap localization and targeted evolution across continual post-training and test-time / agent evolution.
+        <ul class="feature-list">
+          <li>
+      <strong>Continual post-training:</strong> localizing and adapting reusable parameter subspaces, function vectors, and LoRA modules to support efficient but stable capability evolution. Related:
+      <a href="https://openreview.net/forum?id=5U1rlpX68A">SD-LoRA</a>;
+      <a href="https://openreview.net/forum?id=gc8QAQfXv6">Function Vectors for Continual Instruction Tuning</a>;
+      <a href="https://arxiv.org/pdf/2506.12597">SIMoE</a>;
+    </li>
+
+    <li>
+      <strong>Continual test-time / agent evolution:</strong> diagnosing reasoning failures or task-level capability gaps during inference and agent execution, then correcting reasoning paths, composing edits or adapting skills within and across tasks. Related:
+      <a href="https://arxiv.org/abs/2603.01025">One-Token Verification</a>;
+      <a href="https://openreview.net/forum?id=qK4JKOu0Gx">Scaling Reasoning Hop</a>;
+      <a href="https://openreview.net/forum?id=OwU0mgfKUi">Towards Compositional Model Editing</a>.
+      <a href="https://arxiv.org/abs/2411.01948">Learning to Edit</a>.
+    </li>
+ 
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Efficient adaptation</h3>
+        <p>We develop efficient adaptation methods that adapt foundation models more effectively and efficiently. Our work approaches this problem from three complementary directions: improving the optimization dynamics of lightweight adapters (<a href="https://openreview.net/pdf?id=Zha2m39ZoM">CoTo</a>), designing adapters that better generalize across evolving domains (<a href="https://openreview.net/pdf?id=SgODU2mx9T">Terra</a>), and compressing large models through quantization while preserving their reasoning and generation capabilities (<a href="https://arxiv.org/pdf/2406.01721">DuQuant</a>).</p>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Applications</h3>
+        <p>We study application scenarios where foundation models and agents must continuously improve their reasoning and decision-making in real-world settings. AI for Science is our current major focus, covering retrosynthesis modeling (<a href="https://openreview.net/pdf?id=h7DGnWGeos">ARP</a>, RetrOchestro), drug/materials discovery, synthetic biology, and more. We also track broader complex-reasoning benchmarks, math, code, agentic tasks, and beyond, wherever current foundation models fall short and model evolution is essential. </p>
+      </article>
+    </div>
+  </section>
+</div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Copyright @ Complife Lab</div>
+  </footer>
+</body>
+</html>
